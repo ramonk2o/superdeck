@@ -1,0 +1,15 @@
+{
+  "name": "superdeck",
+  "description": "The superdeck skill for planning presentations before building them",
+  "owner": {
+    "name": "Ramon Kayo",
+    "url": "https://github.com/ramonk2o"
+  },
+  "plugins": [
+    {
+      "name": "superdeck",
+      "source": "./",
+      "description": "Plans presentations with you before any slide is built, with approval gates between narrative, visual plan and build."
+    }
+  ]
+}

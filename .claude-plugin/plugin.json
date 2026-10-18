@@ -1,0 +1,12 @@
+{
+  "name": "superdeck",
+  "description": "Plans presentations with you before any slide is built: narrative, then visual concept and production plan, then build and review, with approval gates between phases.",
+  "author": {
+    "name": "Ramon Kayo",
+    "url": "https://github.com/ramonk2o"
+  },
+  "homepage": "https://github.com/ramonk2o/superdeck",
+  "repository": "https://github.com/ramonk2o/superdeck",
+  "license": "MIT",
+  "keywords": ["presentations", "slides", "deck", "storytelling", "storyline"]
+}

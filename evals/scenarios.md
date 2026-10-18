@@ -129,3 +129,18 @@ Scenarios that check whether superdeck behaves as designed. Run the affected one
 - The Production plan records the chosen option and why.
 
 **Fail if:** it lists an option the session doesn't have; the recommendation ignores the mandatory template; the build option is first asked after Gate 2.
+
+## S10 — Closing grill
+
+**Setup:** continue S1 until the storyline is proposed and the closing grill starts.
+
+**Then:** accept the recommended answers, except in the first grill round: disagree with the central idea ("the 8% isn't the story, the 3x conversion of the push is"). In later rounds, accept the recommended answers again.
+
+**Expected:**
+- The first grill round is about the central idea only; questions about the audience, the cut or the close wait for a later round.
+- Every question carries a recommended answer and aims at a weak spot of this data (for example, no control group, or reactivation not yet tied to revenue), not only the bank's generic wording.
+- After the disagreement, the central idea is reworked before the branches that depend on it are asked.
+- No round holds more than five questions, and the grill stops once every branch is resolved instead of going through the whole bank.
+- It ends by showing what changed in the central idea and the storyline, and keeps the objections for the presenter kit.
+
+**Fail if:** it asks one question at a time with no recommended answer; it asks the bank's questions word for word without tying them to the deck's data; it asks the dependent branches in the same round as the central idea; it invents a figure.

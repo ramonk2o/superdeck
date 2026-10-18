@@ -4,9 +4,10 @@ Used in step 1.8, and for the single grill round of the express proposal. The go
 
 ## How to run it
 - Use the question-round format from `SKILL.md`.
-- **Follow the tree.** First the central idea; only once it is firm, the other branches. An answer may open dependent questions — they go to the next round.
+- **Ground each question in this deck.** Find the weak spot in the material (a figure with no comparison, a claim with no source, a result with no control group) and recommend how to defend or fix it. A generic question from the bank gets a rubber-stamp answer; one aimed at a real weak spot gets a real one.
+- **Follow the tree.** First the central idea; only once it is firm, the other branches. An answer may open dependent questions — they go to the next round. The first rounds can be small: the central idea often takes one or two questions on its own.
 - **Prioritize by risk.** Usually 2 to 4 rounds are enough; stop when every branch is resolved. In express mode, a single round, with the highest-risk questions.
-- Add the "Specific grill" questions from the case file to the bank below.
+- The bank below is a menu, not a script: pick what this material leaves open, and add the "Specific grill" questions from the case file.
 - Write down every objection raised.
 - At the end, show what changed in the central idea and the storyline because of the grill.
 

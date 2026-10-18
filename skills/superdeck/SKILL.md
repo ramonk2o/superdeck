@@ -22,7 +22,7 @@ Recommend a mode in the opening, with a one-line reason.
 
 **Full** — for a deck that goes to a client, asks for a decision, budget or approval, or faces a skeptical room. It goes through every step, with two gates, a visual prototype, a cold reader before and after the build, and a presenter kit.
 
-**Express** — for an internal, low-risk, short or recurring deck (status, monthly report). In a single message, propose everything from the material: inferred context, deck type, central idea, arc, hook, moment and close, storyline, visual concept, global rules and build tool, plus one grill round with the 3 to 5 highest-risk questions. A single gate approves it all; then build and review (Phase 3, with the cold reader only after the build). Express keeps the same rules: nothing invented and no slides before the gate.
+**Express** — for an internal, low-risk, short or recurring deck (status, monthly report). In a single message, propose everything from the material: inferred context, deck type, central idea, arc, hook, moment and close, storyline, visual concept, global rules and build tool, plus one grill round with the 3 to 5 highest-risk questions (`references/grill.md`). A single gate approves it all; then build and review (Phase 3, with the cold reader only after the build). Express keeps the same rules: nothing invented and no slides before the gate.
 
 If something comes up in the middle of express mode that changes the course — the audience is different, the main figure doesn't exist, the central idea doesn't hold — suggest switching to full mode.
 
@@ -127,27 +127,9 @@ What goes in is what supports the central idea or answers a likely objection fro
 - Mark with `*` the slides that stay in the **short version**, in case the time is cut in half.
 - Length: live or hybrid, roughly 1 slide per 1–2 minutes of speaking time; for reading, fewer and denser slides.
 
-**1.8 Closing grill.** Press the central idea and the storyline until they can stand up to the room. Better for the deck to take the beating here than in the meeting.
-- Use the round format: 3 to 5 questions, each with your recommended answer and the reason. The user confirms, corrects or answers differently.
-- **Follow the tree.** First the central idea; only once it is firm, the other branches. An answer may open dependent questions — they go to the next round.
-- **Prioritize by risk.** Usually 2 to 4 rounds are enough; stop when every branch is resolved. In express mode, a single round, with the highest-risk questions.
-- Also use the "Specific grill" in the case file.
-- **Keep the objections** raised: they become the Q&A in the presenter kit (step 3.4).
-- At the end, show what changed in the central idea and the storyline because of the grill.
+**1.8 Closing grill.** Press the central idea and the storyline until they can stand up to the room. Read `references/grill.md` and follow it. The objections raised become the Q&A in the presenter kit (step 3.4).
 
-Question bank by branch:
-- **Central idea:** If the deck had a single slide, what would it say? Could a reasonable person disagree? Does it change any decision or action of the audience? Does it fit in one sentence said aloud without taking a breath?
-- **Audience:** What do they think today, and what needs to change in their mind? What is the first question they will ask, and where is it answered? What is the most likely objection, and which slide answers it? Who in the room might disagree or feel threatened?
-- **Evidence:** Where does each number come from, and compared with what? What is the most fragile figure, and what happens if someone questions it? Is any finding a correlation presented as cause? Was anything that contradicts the central idea left out? Why?
-- **Attention:** Does the hook create tension tied to the central idea, or is it just curious? What is the memorable moment and where does it sit? On which slide is the room likely to drift?
-- **Cut:** What is the weakest slide, and what is lost if it goes? Is any slide there because it took work, and not because it matters to the audience? Does the deck fit the time, with room for questions?
-- **Close and action:** What should happen the following Monday because of this presentation? Is the ask explicit — who does what, by when? Does the last slide make that clear?
-- **Room risk:** What is the worst thing that could happen in this presentation, and is the deck ready for it? If the time is cut in half, does the short version hold?
-
-**1.9 Cold reader test.** Before the gate, check whether the deck communicates what is intended to someone from outside.
-- **Who reads:** if the session has a subagent tool, use one that receives only the audience profile (role, what they know, what they think today) and the list of titles — never the conversation, the objective or the central idea. Without a subagent, simulate it yourself, taking the audience's role and reading only the titles, and tell the user it is a simulation.
-- **What the reader answers:** (1) In one sentence, what does this deck want you to think or do? (2) What is the first question or objection you would raise? (3) At what point would you lose interest? (4) At the end, what would you do?
-- **How to use it:** show the reader's answers next to what was expected (central idea and objective) and propose adjustments where they diverge. Divergence in answers 1 or 4 is a storyline problem, not the reader's. New objections go into the kit's list.
+**1.9 Cold reader test.** Before the gate, check whether the storyline communicates what is intended to someone who did not follow the conversation. Read `references/cold-reader.md` and run the test on the slide titles.
 
 ### Gate 1 — Script
 
@@ -172,7 +154,7 @@ Short version (*): slides …
 Appendix: …
 Left out: …
 Objections raised (for the kit): …
-Cold reader: [result in one line]
+Cold reader: [result in one line, or "not run"]
 Pending [TO CONFIRM]: …
 ```
 
@@ -264,7 +246,7 @@ Ask for explicit approval; pending items must be resolved before building.
 **3.3 Review.** Before delivering:
 - **Against the plan** (rules in `references/handoff.md`): every slide present, exact titles, correct data, highlight in the right place.
 - **Visual, looking at the rendered deck** — images or a preview of the slides, not only the code or text: text cut off, overflowing or overlapping; a title longer than two lines; type too small for the format (live: legible from the back of the room); weak contrast; a chart highlighting the wrong figure or missing source and period; the same color meaning different things; a slide that breaks the visual concept. Fix what is only appearance; for anything that changes content, ask first.
-- **Cold reader, with the finished deck:** same method as 1.9, plus one question — "what would you remember tomorrow?". The answer should be the memorable moment or the central idea; if it isn't, propose the adjustment.
+- **Cold reader, with the finished deck:** run the after-build test in `references/cold-reader.md`.
 - Tell the user what was fixed and what still diverges from the plan.
 
 If the chosen tool doesn't let you see the result (a prompt for an external tool, a script to assemble by hand), deliver this review as a checklist for the user to run after assembling.

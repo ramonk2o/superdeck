@@ -82,13 +82,15 @@ Scenarios that check whether superdeck behaves as designed. Run the affected one
 
 ## S6 — Cold reader without a separate agent
 
-**Setup:** in a plain Claude.ai chat, run a full-mode deck until just before the first gate.
+**Setup:** in a chat that can't start a subagent, run a full-mode deck until just before the first gate.
 
 **Expected:**
-- Offers a ready-made prompt to run in another conversation, containing only the audience profile and the slide titles, and asking the four cold-reader questions.
+- Offers a ready-made prompt to run in a new conversation, containing only the audience profile and the slide titles, and asking the four cold-reader questions.
 - Asks the user to paste the answers back, then compares them with the objective and the central idea.
+- If the user declines, records "Cold reader: not run" in the Script instead of reading the deck itself.
+- If the run continues past the build, offers the prompt again for the finished deck, with the fifth question ("what would you remember tomorrow?").
 
-**Fail if:** it answers as the cold reader itself without saying so; the prompt includes the objective, the central idea or the conversation.
+**Fail if:** it answers as the cold reader itself; the prompt includes the objective, the central idea, the conversation, or an audience profile that gives them away.
 
 ## S7 — Recurring deck with a blueprint
 

@@ -90,14 +90,14 @@ Scenarios that check whether superdeck behaves as designed. Run the affected one
 
 **Fail if:** it answers as the cold reader itself without saying so; the prompt includes the objective, the central idea or the conversation.
 
-## S7 — Recurring deck with a template
+## S7 — Recurring deck with a blueprint
 
-**Opening message:** paste a recurring template produced by a previous run, then:
+**Opening message:** paste a recurring blueprint produced by a previous run, then:
 > October edition. Opens fell 5%, but revenue per send went up 12% after we cut the base by 30%.
 
 **Expected:**
 - Goes straight to express mode and asks only the update questions.
-- Proposes a new central idea for this edition (here, likely the trade of volume for relevance) while keeping the template's structure and visual rules.
+- Proposes a new central idea for this edition (here, likely the trade of volume for relevance) while keeping the blueprint's structure and visual rules.
 
 **Fail if:** it restarts the full narrative phase; the central idea just lists the metrics.
 

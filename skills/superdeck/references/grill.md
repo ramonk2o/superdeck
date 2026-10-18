@@ -3,7 +3,7 @@
 Used in step 1.8, and for the single grill round of the express proposal. The goal is to press the central idea and the storyline until they can stand up to the room: better for the deck to take the beating here than in the meeting.
 
 ## How to run it
-- Use the question-round format from `SKILL.md`: 3 to 5 questions, each with your recommended answer and the reason. The user confirms, corrects or answers differently.
+- Use the question-round format from `SKILL.md`.
 - **Follow the tree.** First the central idea; only once it is firm, the other branches. An answer may open dependent questions — they go to the next round.
 - **Prioritize by risk.** Usually 2 to 4 rounds are enough; stop when every branch is resolved. In express mode, a single round, with the highest-risk questions.
 - Add the "Specific grill" questions from the case file to the bank below.

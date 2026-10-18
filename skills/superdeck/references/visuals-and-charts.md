@@ -47,6 +47,6 @@ From the material received, extract and confirm with the user: palette (with hig
 
 ## No identity material
 Build it together:
-1. Ask in a single round, each question with your recommended answer: is the tone **sober** or **expressive**? Are there known brand colors, even without a manual? Is there a presentation they liked as a reference?
+1. Ask in a single round: is the tone **sober** or **expressive**? Are there known brand colors, even without a manual? Is there a presentation they liked as a reference?
 2. Propose 2 or 3 short directions, each with: palette (background, text, highlight, neutrals), a type pairing and one sentence on the feel.
 3. Settle on one direction and record it as global rules.

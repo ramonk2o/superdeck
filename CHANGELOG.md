@@ -19,6 +19,7 @@ First public release. Compared with the earlier Portuguese draft:
 - The Gate 1 document is the Script, the unconfirmed marker is `[TO CONFIRM]`, and the recurring template is the Recurring blueprint.
 - The campaign or creative concept case moves from `SKILL.md` to `references/cases/campaign-concept.md`.
 - The review and the presenter kit move to `references/handoff.md`; Phase 3 steps are renumbered 3.1 to 3.3.
+- Content used by a single step moves out of `SKILL.md`: hook, moment and close types to `references/attention.md`, the visual concept method to `references/visual-concept.md`, recurring decks to `references/recurring.md`, and hybrid density to `references/visuals-and-charts.md`.
 - Build options are described as capabilities instead of product names.
 
 ### Removed

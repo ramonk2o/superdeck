@@ -1,6 +1,6 @@
 # Visuals and charts
 
-Used in Phase 2. The principle: **the visual is chosen by the title's message**, not by the shape of the data. First ask "what does this slide claim?", then "which visual proves it fastest?".
+Used in Phase 2 (steps 2.2, 2.3 and 2.5). The principle: **the visual is chosen by the title's message**, not by the shape of the data. First ask "what does this slide claim?", then "which visual proves it fastest?".
 
 ## From message to visual
 
@@ -31,9 +31,10 @@ Used in Phase 2. The principle: **the visual is chosen by the title's message**,
 - **One chart per slide** by default; two only when the comparison between them is the message.
 - **Consistency:** the same color means the same thing across the whole deck.
 
-## Density: live vs. reading
+## Density by format
 - **Live:** little text on the slide, the presenter tells the story; speaker notes carry the detail; large type.
 - **Reading:** the slide has to explain itself; assertion title + visual + one or two sentences reading the chart; more density is acceptable, but with a clear hierarchy.
+- **Hybrid:** the slide is designed for the room, and the speaker notes are written as full reading text, for whoever receives the file later. If the deck will circulate well beyond the room, include an executive summary for reading at the start of the appendix.
 
 ## Identity materials to ask for
 - Brand manual (colors, typography, logo use).

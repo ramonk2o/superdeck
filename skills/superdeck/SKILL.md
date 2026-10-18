@@ -22,7 +22,7 @@ Recommend a mode in the opening, with a one-line reason.
 
 **Full** — for a deck that goes to a client, asks for a decision, budget or approval, or faces a skeptical room. It goes through every step, with two gates, a visual prototype, a cold reader before and after the build, and a presenter kit.
 
-**Express** — for an internal, low-risk, short or recurring deck (status, monthly report). In a single message, propose everything from the material: inferred context, deck type, central idea, arc, hook, moment and close, storyline, visual concept, global rules and build option (`references/handoff.md`), plus one grill round with the 3 to 5 highest-risk questions (`references/grill.md`). A single gate approves it all; then build and review (Phase 3, with the cold reader only after the build). Express keeps the same rules: nothing invented and no slides before the gate.
+**Express** — for an internal, low-risk, short or recurring deck (status, monthly report). In a single message, propose everything from the material: inferred context, deck type, central idea, arc, hook, moment and close, storyline, visual concept, global rules and build option, plus one grill round with the 3 to 5 highest-risk questions. Each part follows the reference file of its full-mode step. A single gate approves it all; then build and review (Phase 3, with the cold reader only after the build). Express keeps the same rules: nothing invented and no slides before the gate.
 
 If something comes up in the middle of express mode that changes the course — the audience is different, the main figure doesn't exist, the central idea doesn't hold — suggest switching to full mode.
 
@@ -59,7 +59,7 @@ If something comes up in the middle of express mode that changes the course — 
 The first reply already does work; it is not just a process notice.
 
 1. In one sentence, say how it will work: first settle what the deck needs to say, then how it will look, and only then build and review.
-2. Identify the deck type (list in step 1.2) and read the case file. If it is the new edition of a recurring deck and the user brought a Recurring blueprint, follow "Recurring decks".
+2. Identify the deck type (list in step 1.2) and read the case file. If it is the new edition of a recurring deck and the user brought a Recurring blueprint, follow `references/recurring.md`.
 3. Show that you have started:
    - **With material:** read all of it and bring the first reading — the findings that seem to matter, a hypothesis for the central idea, and any risk an attentive audience would raise (fragile figure, unfair comparison, double counting).
    - **Without material:** propose the case's starting point — the typical skeleton adapted to what the user said and the arc that will probably work.
@@ -107,10 +107,7 @@ What goes in is what supports the central idea or answers a likely objection fro
 
 **1.5 Arc.** Read `references/narrative-arcs.md`. Propose 2 or 3 arcs that make sense for this audience and objective, with pros and cons, and recommend one.
 
-**1.6 Hook, moment and close.** Attention is planned; it doesn't appear by itself in the middle of the build. Propose all three, each with your recommendation:
-- **Hook:** how the first 30 seconds — or the first slide, in a reading deck — create a tension that only the central idea resolves. Types: a number that contradicts what the audience believes; the question they already bring into the room; a concrete case (a customer, a situation); the cost of not acting; a provocation. The hook has to lead to the central idea; a loose trick grabs attention and then wastes it.
-- **Memorable moment:** the one thing the audience will remember and repeat the next day, placed at the turning point of the arc. Types: a figure revealed dramatically (a big number alone, a chart whose reading changes), an unexpected comparison, a real story, a demonstration, a metaphor that becomes an image (Phase 2 gives it form). Test: would someone tell a colleague about it in the hallway?
-- **Close:** the last slide is the ask or the concrete action — who does what, by when — and, when possible, it returns to the hook to close the circle. "Thank you" or "Questions?" is never the last content slide.
+**1.6 Hook, moment and close.** Attention is planned; it doesn't appear by itself in the middle of the build. Read `references/attention.md` and propose all three, each with your recommendation: a hook that creates a tension only the central idea resolves, one memorable moment at the turning point of the arc, and a close that is the concrete ask.
 
 **1.7 Storyline.** Build the slide sequence:
 
@@ -162,21 +159,15 @@ Ask for explicit approval. Pending items can move on to Phase 2 if the user agre
 
 ## Phase 2 — Visual concept and plan
 
-Just as Phase 1 starts from a central idea, Phase 2 starts from a **visual concept**: a single idea that organizes how the whole deck will look. Without a concept, each slide solves its visuals alone and the deck becomes a collage; with one, every slide looks like part of the same story — and that is a good part of what the audience remembers.
+Just as Phase 1 starts from a central idea, Phase 2 starts from a **visual concept**: a single idea that organizes how the whole deck looks. Without one, each slide solves its visuals alone and the deck becomes a collage.
 
-**2.1 Visual concept.**
-- Before proposing, know what constrains the concept. If the session can list design systems saved in the user's account, list them before asking. If you don't yet know whether there is a mandatory template or brand manual, ask in the same round in which you propose the concepts.
-- Propose 2 or 3 concepts derived from the central idea, the arc, the memorable moment, the audience and the tone. For each: a short name; the concept in one sentence; how it shows up in the deck (cover, charts, transitions, memorable moment); why it serves the message; risk or limit. Recommend one.
-- Examples, to calibrate and not to copy: "everything told with simple geometric shapes only — the data becomes shape"; "each finding is an infographic that explains itself"; "the whole deck revolves around the image of an iceberg: on top, the metrics everyone sees; below, the revenue nobody looks at"; "control-panel language"; "full-screen documentary photography of the real customer"; "a route map, in which each section is a stop on the way to the destination".
-- Test before recommending: does the concept reinforce the central idea or is it just decoration? Does it work on the hardest slide, the one with the densest data? Does it fit the brand identity and the mandatory template? Can it be executed with the build options this session offers? For a sober reading deck, a discreet concept (a system of colors, shapes and grid) usually works better than a strong metaphor.
-- Adjust until the user recognizes the concept as theirs.
+**2.1 Visual concept.** Read `references/visual-concept.md`. Propose 2 or 3 concepts derived from the central idea, the arc, the memorable moment, the audience and the tone, recommend one, and adjust until the user recognizes it as theirs.
 
 **2.2 Identity materials.** Ask for the identity materials listed in `references/visuals-and-charts.md` that 2.1 hasn't brought yet. If there are none, follow the "No identity material" section of the same file.
 
-**2.3 Global rules.** Propose and settle, derived from the concept and the identity: palette, typography, text density, chart standard, tone of the copy and use of images. Density by format (details for live and reading in `references/visuals-and-charts.md`):
-- **Hybrid:** the slide is designed for the room, and the speaker notes are written as full reading text, for whoever receives the file later. If the deck will circulate well beyond the room, include an executive summary for reading at the start of the appendix.
+**2.3 Global rules.** Propose and settle, derived from the concept and the identity: palette, typography, text density, chart standard, tone of the copy and use of images. Set the density by format (live, reading or hybrid) as described in `references/visuals-and-charts.md`.
 
-**2.4 Prototype.** Before detailing slide by slide, show 2 or 3 representative slides in low fidelity: the cover or the hook, the hardest data slide and the memorable moment. Draw them inline in the conversation when the session allows (a simple sketch in HTML or SVG), or in an equivalent quick draft. It is a sketch to validate the concept and global rules, not the deck: don't call build skills here. Adjust the concept and rules with what the user says before moving on. Seeing the visual is worth more than reading a description of it.
+**2.4 Prototype.** Before detailing slide by slide, show 2 or 3 representative slides in low fidelity — the cover or hook, the hardest data slide and the memorable moment — drawn inline when the session allows (a simple HTML or SVG sketch) or as a quick draft. Seeing the visual is worth more than reading about it. The sketch validates the concept and global rules, not the deck: don't call build skills here, and adjust both with the user's feedback before moving on.
 
 **2.5 Slide by slide.** Read `references/visuals-and-charts.md`. For each slide in the storyline, define:
 - **Title:** exactly the one in the Script (change it only with approval, and update the Script along with it).
@@ -250,19 +241,4 @@ Ask for explicit approval; pending items must be resolved before building.
 
 ## Recurring decks
 
-For periodic decks: monthly CRM report, weekly status, committee, QBR. In the first edition, after the build, deliver a **Recurring blueprint** for the user to keep (for example, in a project's files):
-
-```
-RECURRING BLUEPRINT — [name]
-Audience · objective · format · duration
-Deck type · arc
-Storyline structure, with titles as molds ("[Metric] [rose/fell] X% vs. [reference]")
-Visual concept · global rules · template/design system · build tool
-Data source for each slide
-Update questions:
-  - What changed since the last edition?
-  - What is the central idea of this edition?
-  - Any new data? Any slide that stopped mattering?
-```
-
-In later editions, with the blueprint in hand, go straight to express mode. Phase 1 becomes one round with the update questions, always with a new central idea: the structure repeats, the message doesn't. Phase 2 only reopens if the audience, objective or identity change. Recurring decks tend to turn into a list of metrics; the quick grill always asks what is news in this edition.
+For periodic decks (monthly report, weekly status, committee, QBR), read `references/recurring.md`. In the first edition, deliver a Recurring blueprint after the build; in later editions, with the blueprint in hand, go straight to express mode with a new central idea.

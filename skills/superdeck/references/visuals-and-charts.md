@@ -40,12 +40,12 @@ Used in Phase 2. The principle: **the visual is chosen by the title's message**,
 - Official template (.pptx, Google Slides).
 - Decks previously approved by the same audience or client.
 - Chart or dataviz guide, if one exists.
-- Constraints: mandatory disclaimers, forbidden terms, rules for using images.
+- Client guidelines and constraints: logos, mandatory disclaimers, forbidden terms, rules for using images.
 
 From the material received, extract and confirm with the user: palette (with highlight color and neutrals), typography, chart standard, mandatory elements.
 
 ## No identity material
 Build it together:
-1. Ask, one at a time: is the tone **sober** or **expressive**? Are there known brand colors, even without a manual? Is there a presentation they liked as a reference?
+1. Ask in a single round, each question with your recommended answer: is the tone **sober** or **expressive**? Are there known brand colors, even without a manual? Is there a presentation they liked as a reference?
 2. Propose 2 or 3 short directions, each with: palette (background, text, highlight, neutrals), a type pairing and one sentence on the feel.
 3. Settle on one direction and record it as global rules.

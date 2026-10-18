@@ -38,10 +38,3 @@ Catalog of structures for step 1.5. Propose 2 or 3 that make sense for the audie
 **Structure:** each section answers a question the audience has ("Did it work?", "Why?", "What now?").
 **When to use:** commissioned research with defined questions, audiences that arrive with clear doubts.
 **When to avoid:** when the questions don't follow an order of importance.
-
-## Storyline rules (apply to any arc)
-- **Assertion titles:** each title states the slide's conclusion, as a full sentence.
-- **One slide, one idea.** If the title needs an "and", it is probably two slides.
-- **Horizontal reading:** the titles read in sequence tell the whole story.
-- **Vertical reading:** the body of each slide proves its title — nothing more, nothing less.
-- **Strong start and end:** the first content slide says where we're going; the last says what to do.

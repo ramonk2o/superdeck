@@ -11,7 +11,7 @@ Knowing what to say is not enough: a clear deck can still be ignored or forgotte
 
 ```
 Full:    Opening → PHASE 1 Narrative → [GATE 1: Script] → PHASE 2 Visual concept and plan → [GATE 2: Production plan] → PHASE 3 Build and review
-Express: Opening → Complete proposal (script + visual direction) → [SINGLE GATE] → PHASE 3 Build and review
+Express: Opening → Complete proposal (Script + visual direction) → [SINGLE GATE] → PHASE 3 Build and review
 ```
 
 Converse in the user's language. Write the gate documents in that language too; the labels in the templates below are a mold, not fixed text.
@@ -42,14 +42,13 @@ If something comes up in the middle of express mode that changes the course — 
 - Order by risk: first what, if wrong, changes the deck the most.
 - When the question is a choice between paths (mode, arc, visual concept), show the options numbered and mark the recommended one.
 - If the material answers a question, don't ask it: use the answer and say where it came from.
-- This format applies even where a reference file says to ask "one at a time".
 - Requests without urgency ("if you have the template, send it along") go in one line, outside the numbering.
 
 **Propose before asking.** With material, bring a reading of it ("I'd say the central idea is X"). Without material, use the case file to propose a starting point — the typical skeleton, a likely arc, the questions this kind of audience usually has — and ask for a reaction.
 
 **Collaborate when material is missing.** A missing file, figure or answer never stalls the conversation: propose a draft, raise hypotheses, say where the information might be. The user came to the skill precisely because the content isn't clear yet.
 
-**Nothing invented.** Every number, fact or quote in the script comes from the material or from the user. Derived figures (sums, changes) are welcome once checked. Anything without a source is marked `[TO CONFIRM]` until resolved — one invented number in a client deck destroys the credibility of everything else.
+**Nothing invented.** Every number, fact or quote in the Script comes from the material or from the user. Derived figures (sums, changes) are welcome once checked. Anything without a source is marked `[TO CONFIRM]` until resolved — one invented number in a client deck destroys the credibility of everything else.
 
 **Go back when needed.** If something from an earlier phase changes (a figure doesn't exist, the audience changed, the central idea fell), say so clearly and reopen the affected phase. Moving forward on a base that fell only adds rework.
 
@@ -121,6 +120,7 @@ What goes in is what supports the central idea or answers a likely objection fro
 ```
 
 - Titles are full sentences that state the slide's conclusion ("Repurchase fell 12% among inactive customers"), never labels ("Results"). A label title makes the audience draw the conclusion alone, and they may draw a different one. On the slide, the title fits in two lines (usually up to ~15 words); if it doesn't fit, the idea is too big or it is two slides.
+- **One slide, one idea.** If the title needs an "and", it is probably two slides. The body of each slide proves its title — nothing more, nothing less.
 - Test: reading only the titles in sequence, does the story hold?
 - The deck doesn't open with an agenda: the first content slide is the hook or the answer. In long decks, a short map can come right after the hook.
 - **Rhythm:** don't stack more than three dense slides in a row; interleave an impact or breather slide (a number, a sentence, an image, a quote).
@@ -171,7 +171,7 @@ Just as Phase 1 starts from a central idea, Phase 2 starts from a **visual conce
 - Test before recommending: does the concept reinforce the central idea or is it just decoration? Does it work on the hardest slide, the one with the densest data? Does it fit the brand identity and the mandatory template? Can it be executed in the likely build tool? For a sober reading deck, a discreet concept (a system of colors, shapes and grid) usually works better than a strong metaphor.
 - Adjust until the user recognizes the concept as theirs.
 
-**2.2 Identity materials.** Ask for whatever 2.1 hasn't brought yet: brand manual, template (.pptx, Google Slides), previously approved decks, chart guides, client guidelines and constraints (logos, disclaimers, forbidden terms). If there is nothing, use the "No identity material" section of `references/visuals-and-charts.md`, asking its questions in a single round.
+**2.2 Identity materials.** Ask for the identity materials listed in `references/visuals-and-charts.md` that 2.1 hasn't brought yet. If there are none, follow the "No identity material" section of the same file.
 
 **2.3 Global rules.** Propose and settle, derived from the concept and the identity: palette, typography, text density, chart standard, tone of the copy and use of images. Density by format (details for live and reading in `references/visuals-and-charts.md`):
 - **Hybrid:** the slide is designed for the room, and the speaker notes are written as full reading text, for whoever receives the file later. If the deck will circulate well beyond the room, include an executive summary for reading at the start of the appendix.
@@ -179,7 +179,7 @@ Just as Phase 1 starts from a central idea, Phase 2 starts from a **visual conce
 **2.4 Prototype.** Before detailing slide by slide, show 2 or 3 representative slides in low fidelity: the cover or the hook, the hardest data slide and the memorable moment. Draw them inline in the conversation when the session allows (a simple sketch in HTML or SVG), or in an equivalent quick draft. It is a sketch to validate the concept and global rules, not the deck: don't call build skills here. Adjust the concept and rules with what the user says before moving on. Seeing the visual is worth more than reading a description of it.
 
 **2.5 Slide by slide.** Read `references/visuals-and-charts.md`. For each slide in the storyline, define:
-- **Title:** exactly the one in the script (change it only with approval, and update the script along with it).
+- **Title:** exactly the one in the Script (change it only with approval, and update the Script along with it).
 - **Visual:** type + exact data + what to highlight, consistent with the concept.
 - **Supporting text:** the minimum needed.
 - **Speaker notes:** if it is live or hybrid.
@@ -241,25 +241,11 @@ Ask for explicit approval; pending items must be resolved before building.
 
 **3.1 Tool.** Read `references/handoff.md`. Ask how the user wants to build, showing only the options available in the session, with a recommendation (in express mode, this was already decided at the gate). If there is a design system in the account and the build is in Claude's Slides, use it.
 
-**3.2 Build.** Treat the approved plan as a closed specification: don't rewrite titles, add content or swap visuals without asking — all of that was already decided with the user.
+**3.2 Build.** Treat the approved plan as a closed specification and follow the build rules in `references/handoff.md`.
 
-**3.3 Review.** Before delivering:
-- **Against the plan** (rules in `references/handoff.md`): every slide present, exact titles, correct data, highlight in the right place.
-- **Visual, looking at the rendered deck** — images or a preview of the slides, not only the code or text: text cut off, overflowing or overlapping; a title longer than two lines; type too small for the format (live: legible from the back of the room); weak contrast; a chart highlighting the wrong figure or missing source and period; the same color meaning different things; a slide that breaks the visual concept. Fix what is only appearance; for anything that changes content, ask first.
-- **Cold reader, with the finished deck:** run the after-build test in `references/cold-reader.md`.
-- Tell the user what was fixed and what still diverges from the plan.
+**3.3 Review.** Before delivering, review the result against the Production plan and on the rendered slides, as described in `references/handoff.md`, then run the after-build test in `references/cold-reader.md`.
 
-If the chosen tool doesn't let you see the result (a prompt for an external tool, a script to assemble by hand), deliver this review as a checklist for the user to run after assembling.
-
-**3.4 Presenter kit.** For live or hybrid decks in full mode (in express mode, offer it in one line):
-- **Anticipated Q&A:** the objections from the grill and the cold reader, each with a short answer and the slide or appendix item that supports it.
-- **Backup slides** in the appendix for the most likely questions that don't fit in the main flow.
-- **Short version:** the slides marked with `*` and what to say in the transition between them.
-- **Talk track** with timing per block, if the user wants it.
-
-Deliver what fits in the deck's own notes and appendix, and the rest in a short document.
-
-Adjustments requested after the build that change content (not just appearance) must also be recorded in the script and the plan, so they remain the source of truth.
+**3.4 Presenter kit.** For live or hybrid decks in full mode, put together the kit described in `references/handoff.md`. In express mode, offer it in one line.
 
 ## Recurring decks
 

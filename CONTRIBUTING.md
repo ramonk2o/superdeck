@@ -61,14 +61,14 @@ These rules follow the [Agent Skills specification](https://agentskills.io/speci
 
 ## Making a change
 
-1. **Open an issue first** for any behavior change: a new step, a new deck case, a different question format, a change to a gate. Typos and wording fixes that keep the same behavior can go straight to a pull request.
+1. **Consider opening an issue first** for a behavior change: a new step, a new deck case, a different question format, a change to a gate. It is a recommendation, not a requirement: a short discussion before you write the change saves effort if the idea doesn't fit. Typos and wording fixes that keep the same behavior can go straight to a pull request, and the maintainer doesn't need an issue to change the skill.
 2. **Describe the real situation** that motivated it: the kind of deck, what the skill did, and what it should have done. Changes based on an actual use are much easier to evaluate than general ideas.
-3. **Check it against the design principles.** If it conflicts with one, say so in the issue; the maintainer decides whether the principle changes.
+3. **Check it against the design principles.** If it conflicts with one, say so in the issue or the pull request; the maintainer decides whether the principle changes.
 4. **Update the scenarios.** If the change alters behavior, add or edit a scenario in `evals/scenarios.md`, and run the affected scenarios as described there.
 5. **Update `CHANGELOG.md`** under `## [Unreleased]`, in the Added, Changed, Fixed or Removed group.
 
 **Pull request checklist**
-- [ ] Linked issue (or a typo/wording fix)
+- [ ] Issue linked, if you opened one (recommended for behavior changes)
 - [ ] `SKILL.md` still under 500 lines; single-step content lives in `references/`
 - [ ] No rule stated in two files; names consistent across files
 - [ ] Scenarios added or updated, with results: model used, date, pass or fail for each expected behavior

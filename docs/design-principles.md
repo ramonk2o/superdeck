@@ -40,7 +40,7 @@ The skill tests the storyline before the first gate, and the finished deck after
 Full mode is for decks that go to clients, ask for a decision or money, or face a skeptical room. Express mode is for internal, low-risk, short or recurring decks: one proposal message, one round of risk questions, one gate. Express must stay cheap; every addition to the flow states whether it applies in express mode.
 
 **12. The build is tool-agnostic and reviewed on the rendered output.**
-The skill offers whatever build options the session has and treats the production plan as the specification. Before delivering, it looks at the rendered slides (overflowing text, legibility, contrast, wrong highlight) and checks them against the plan, not only the code or text behind them.
+The skill looks for the build options the session actually has, weighs them against the deck (a mandatory template, how it will be shared and edited, whether the result can be reviewed) and recommends one before the production gate; the build then treats the production plan as the specification. Before delivering, it looks at the rendered slides (overflowing text, legibility, contrast, wrong highlight) and checks them against the plan, not only the code or text behind them.
 
 **13. A lean core, references on demand.**
 `SKILL.md` loads in full on every activation, so it holds only the flow and the rules every phase needs. Anything used by one step lives in `references/`.

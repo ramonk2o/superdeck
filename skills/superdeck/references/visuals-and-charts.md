@@ -37,7 +37,7 @@ Used in Phase 2. The principle: **the visual is chosen by the title's message**,
 
 ## Identity materials to ask for
 - Brand manual (colors, typography, logo use).
-- Official template (.pptx, Google Slides).
+- Official template (a .pptx file or a template in the slides app they use).
 - Decks previously approved by the same audience or client.
 - Chart or dataviz guide, if one exists.
 - Client guidelines and constraints: logos, mandatory disclaimers, forbidden terms, rules for using images.

@@ -1,6 +1,6 @@
 # Cold reader
 
-Used in step 1.9 (before Gate 1, on the slide titles) and in step 3.3 (after the build, on the finished deck). A cold reader checks whether the deck communicates what is intended to someone who did not follow the conversation. It only works if the reader really doesn't know the answer: a model simulating an outsider inside this conversation already knows the objective and the central idea, so never play the reader yourself.
+Used in step 1.9 (before Gate 1, on the slide titles) and in step 3.2 (after the build, on the finished deck). A cold reader checks whether the deck communicates what is intended to someone who did not follow the conversation. It only works if the reader really doesn't know the answer: a model simulating an outsider inside this conversation already knows the objective and the central idea, so never play the reader yourself.
 
 ## What the reader receives
 - The audience profile: role, what they already know about the subject, what they think about it today.

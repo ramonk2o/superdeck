@@ -22,7 +22,7 @@ Recommend a mode in the opening, with a one-line reason.
 
 **Full** — for a deck that goes to a client, asks for a decision, budget or approval, or faces a skeptical room. It goes through every step, with two gates, a visual prototype, a cold reader before and after the build, and a presenter kit.
 
-**Express** — for an internal, low-risk, short or recurring deck (status, monthly report). In a single message, propose everything from the material: inferred context, deck type, central idea, arc, hook, moment and close, storyline, visual concept, global rules and build tool, plus one grill round with the 3 to 5 highest-risk questions (`references/grill.md`). A single gate approves it all; then build and review (Phase 3, with the cold reader only after the build). Express keeps the same rules: nothing invented and no slides before the gate.
+**Express** — for an internal, low-risk, short or recurring deck (status, monthly report). In a single message, propose everything from the material: inferred context, deck type, central idea, arc, hook, moment and close, storyline, visual concept, global rules and build option (`references/handoff.md`), plus one grill round with the 3 to 5 highest-risk questions (`references/grill.md`). A single gate approves it all; then build and review (Phase 3, with the cold reader only after the build). Express keeps the same rules: nothing invented and no slides before the gate.
 
 If something comes up in the middle of express mode that changes the course — the audience is different, the main figure doesn't exist, the central idea doesn't hold — suggest switching to full mode.
 
@@ -127,7 +127,7 @@ What goes in is what supports the central idea or answers a likely objection fro
 - Mark with `*` the slides that stay in the **short version**, in case the time is cut in half.
 - Length: live or hybrid, roughly 1 slide per 1–2 minutes of speaking time; for reading, fewer and denser slides.
 
-**1.8 Closing grill.** Press the central idea and the storyline until they can stand up to the room. Read `references/grill.md` and follow it. The objections raised become the Q&A in the presenter kit (step 3.4).
+**1.8 Closing grill.** Press the central idea and the storyline until they can stand up to the room. Read `references/grill.md` and follow it. The objections raised become the Q&A in the presenter kit (step 3.3).
 
 **1.9 Cold reader test.** Before the gate, check whether the storyline communicates what is intended to someone who did not follow the conversation. Read `references/cold-reader.md` and run the test on the slide titles.
 
@@ -165,10 +165,10 @@ Ask for explicit approval. Pending items can move on to Phase 2 if the user agre
 Just as Phase 1 starts from a central idea, Phase 2 starts from a **visual concept**: a single idea that organizes how the whole deck will look. Without a concept, each slide solves its visuals alone and the deck becomes a collage; with one, every slide looks like part of the same story — and that is a good part of what the audience remembers.
 
 **2.1 Visual concept.**
-- Before proposing, know what constrains the concept. If the session can list the design systems in the user's account (for example, artifacts of the Design System type), list them before asking. If you don't yet know whether there is a mandatory template or brand manual, ask in the same round in which you propose the concepts.
+- Before proposing, know what constrains the concept. If the session can list design systems saved in the user's account, list them before asking. If you don't yet know whether there is a mandatory template or brand manual, ask in the same round in which you propose the concepts.
 - Propose 2 or 3 concepts derived from the central idea, the arc, the memorable moment, the audience and the tone. For each: a short name; the concept in one sentence; how it shows up in the deck (cover, charts, transitions, memorable moment); why it serves the message; risk or limit. Recommend one.
 - Examples, to calibrate and not to copy: "everything told with simple geometric shapes only — the data becomes shape"; "each finding is an infographic that explains itself"; "the whole deck revolves around the image of an iceberg: on top, the metrics everyone sees; below, the revenue nobody looks at"; "control-panel language"; "full-screen documentary photography of the real customer"; "a route map, in which each section is a stop on the way to the destination".
-- Test before recommending: does the concept reinforce the central idea or is it just decoration? Does it work on the hardest slide, the one with the densest data? Does it fit the brand identity and the mandatory template? Can it be executed in the likely build tool? For a sober reading deck, a discreet concept (a system of colors, shapes and grid) usually works better than a strong metaphor.
+- Test before recommending: does the concept reinforce the central idea or is it just decoration? Does it work on the hardest slide, the one with the densest data? Does it fit the brand identity and the mandatory template? Can it be executed with the build options this session offers? For a sober reading deck, a discreet concept (a system of colors, shapes and grid) usually works better than a strong metaphor.
 - Adjust until the user recognizes the concept as theirs.
 
 **2.2 Identity materials.** Ask for the identity materials listed in `references/visuals-and-charts.md` that 2.1 hasn't brought yet. If there are none, follow the "No identity material" section of the same file.
@@ -186,7 +186,9 @@ Just as Phase 1 starts from a central idea, Phase 2 starts from a **visual conce
 
 With the prototype validated, present in blocks of 5 to 8 slides and validate each block before the next.
 
-**2.6 Check.** Before the gate, confirm:
+**2.6 Build tool.** Read `references/handoff.md` and choose with the user how the deck will be built, from what the session can actually do. Choosing now lets Gate 2 approve the tool along with the plan, and catches a concept the tool can't execute before the build.
+
+**2.7 Check.** Before the gate, confirm:
 - every figure in the plan exists and has a source;
 - each visual proves its slide's title;
 - the concept shows up consistently across the deck;
@@ -203,6 +205,7 @@ Visual concept: …
 Global rules: palette · typography · density · chart standard · tone · images
 Template/identity/design system: …
 Prototype: approved (slides …)
+Build: [option] — [why, in one line]
 
 Slide 1 — [Title]
   Visual: …
@@ -231,7 +234,7 @@ Storyline
 
 Visual concept: …
 Global rules: …
-Build: [recommended tool]
+Build: [recommended option] — [why, in one line]
 Pending [TO CONFIRM]: …
 ```
 
@@ -239,13 +242,11 @@ Ask for explicit approval; pending items must be resolved before building.
 
 ## Phase 3 — Build and review
 
-**3.1 Tool.** Read `references/handoff.md`. Ask how the user wants to build, showing only the options available in the session, with a recommendation (in express mode, this was already decided at the gate). If there is a design system in the account and the build is in Claude's Slides, use it.
+**3.1 Build.** Treat the approved plan as a closed specification and follow the build rules in `references/handoff.md`.
 
-**3.2 Build.** Treat the approved plan as a closed specification and follow the build rules in `references/handoff.md`.
+**3.2 Review.** Before delivering, review the result against the Production plan and on the rendered slides, as described in `references/handoff.md`, then run the after-build test in `references/cold-reader.md`.
 
-**3.3 Review.** Before delivering, review the result against the Production plan and on the rendered slides, as described in `references/handoff.md`, then run the after-build test in `references/cold-reader.md`.
-
-**3.4 Presenter kit.** For live or hybrid decks in full mode, put together the kit described in `references/handoff.md`. In express mode, offer it in one line.
+**3.3 Presenter kit.** For live or hybrid decks in full mode, put together the kit described in `references/handoff.md`. In express mode, offer it in one line.
 
 ## Recurring decks
 

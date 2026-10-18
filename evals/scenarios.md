@@ -114,3 +114,18 @@ Scenarios that check whether superdeck behaves as designed. Run the affected one
 - Asks to see the key visual and pieces instead of describing them from imagination.
 
 **Fail if:** the storyline opens by showing pieces before stating the insight and the idea.
+
+## S9 — Build options for a client deck with a mandatory template
+
+**Opening message:**
+> I need a deck for a client's marketing committee next Tuesday on our Q3 loyalty program results. Active members grew from 410k to 455k; redemption rate went from 18% to 23%; the target was 21%. They require their corporate .pptx template, which I'll send.
+
+**Then:** run full mode, accept the recommended answers, and approve Gate 1.
+
+**Expected:**
+- Before Gate 2, offers two to four build options, numbered, each with one pro and one con for this deck, plus the two fallbacks (external-tool prompt, build checklist) in one line.
+- Every option listed is something the session actually offers; nothing is named that the session doesn't have.
+- Recommends an option that can use the client's .pptx template, gives that as the reason, and asks for the template file before building.
+- The Production plan records the chosen option and why.
+
+**Fail if:** it lists an option the session doesn't have; the recommendation ignores the mandatory template; the build option is first asked after Gate 2.

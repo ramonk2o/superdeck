@@ -1,8 +1,8 @@
 # Contributing to superlab
 
-superlab is a suite of Agent Skills that plan a piece of writing with the user before producing it, with explicit approval gates between phases. Today it has one skill, superdeck, for presentations. This file explains how the repository is organized, the rules every change to a skill follows, and how releases are made.
+superlab is a suite of Agent Skills that plan a piece of writing with the user before producing it, with explicit approval gates between phases. Today it has superdeck, for presentations, and supercontext, for knowledge files. This file explains how the repository is organized, the rules every change to a skill follows, and how releases are made.
 
-Before proposing a behavior change, read [docs/principles.md](docs/principles.md), which holds the principles every skill follows and how proposals are judged, and the design file of the skill you are changing (for superdeck, [docs/superdeck.md](docs/superdeck.md)).
+Before proposing a behavior change, read [docs/principles.md](docs/principles.md), which holds the principles every skill follows and how proposals are judged, and the design file of the skill you are changing ([docs/superdeck.md](docs/superdeck.md) or [docs/supercontext.md](docs/supercontext.md)).
 
 ## Repository layout
 
@@ -12,15 +12,18 @@ superlab/                          repository root, also the Claude Code plugin 
 │   ├── marketplace.json           lists the plugin so Claude Code users can install it
 │   └── plugin.json                plugin manifest; the only place the version number lives
 ├── skills/
-│   └── superdeck/                 one folder per skill; each folder is zipped on its own for Claude.ai
-│       ├── SKILL.md
-│       └── references/            one file per step or case that is read on demand
+│   ├── superdeck/                 one folder per skill; each folder is zipped on its own for Claude.ai
+│   │   ├── SKILL.md
+│   │   └── references/            one file per step or case that is read on demand
+│   └── supercontext/
 ├── evals/
 │   ├── README.md                  how to run scenarios
-│   └── superdeck.md               behavior scenarios for each skill, one file per skill
+│   ├── superdeck.md               behavior scenarios for each skill, one file per skill
+│   └── supercontext.md
 ├── docs/
 │   ├── principles.md              principles shared by every skill
-│   └── superdeck.md               design principles of each skill, one file per skill
+│   ├── superdeck.md               design principles of each skill, one file per skill
+│   └── supercontext.md
 ├── scripts/
 │   └── package-skills.sh          builds one zip per skill in dist/
 ├── CHANGELOG.md

@@ -4,6 +4,11 @@ All notable changes to superlab and its skills are recorded here. The format fol
 
 ## [Unreleased]
 
+### Added
+- supercontext, which plans a knowledge file with the user before writing it and replaces create-knowledge. The opening gathers the project, the file's role, its type and the materials; the File plan gate approves the use cases, a triage of the material (in the file, in the project instructions, or out), the outline and a sample entry; the file is written as portable Markdown following Anthropic's and OpenAI's guidance for context material, and a cold reader answers the use cases from the file alone. A light path covers glossaries, short checklists, templates and revisions with one proposal and one gate.
+- supercontext type files for playbooks, references, profiles, guidelines, glossaries, example sets, checklists and output templates, and `references/writing.md` with the writing rules for every type.
+- `docs/supercontext.md` with supercontext's design and the sources behind its format choices, and behavior scenarios S1 to S7 in `evals/supercontext.md`.
+
 ## [0.1.0] - 2026-10-22
 
 Initial release, with superdeck as the suite's first skill.

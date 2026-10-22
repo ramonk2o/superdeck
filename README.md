@@ -5,6 +5,7 @@ Agent Skills that plan a piece of writing with you before producing it: first wh
 | Skill | For | Status |
 |---|---|---|
 | [superdeck](#superdeck) | Presentations, decks and slides | Available |
+| [supercontext](#supercontext) | Knowledge files for AI projects, GPTs and assistants | Available |
 
 Every skill asks a round of numbered questions with a recommended answer, so you mostly confirm or correct. Nothing is invented: every number comes from your material or from you, and anything without a source stays marked until it is confirmed. The skills work in any language and converse in yours.
 
@@ -28,13 +29,33 @@ Express: Opening → Complete proposal with prototype → [Single gate] → Buil
 
 Ask for a deck the way you normally would — "make a deck out of this report for the board", with or without files. The skill triggers when the content isn't settled yet; if your slide-by-slide script is already written, it stays out of the way. In Claude Code you can also call it directly with `/superlab:superdeck`.
 
+## supercontext
+
+Plans a knowledge file with you before writing it — a playbook, reference, profile, guidelines, glossary, example set, checklist or output template — then writes it for how AI assistants actually read files, and tests it with a reader who has only the file.
+
+A knowledge file is read by a model that never saw the conversation where it was written, often in retrieved pieces. supercontext starts from two or three real requests the file must serve, decides with you what goes in and what stays out, and only then writes.
+
+```
+Full:  Opening → Interview → [Gate: File plan] → Write → Cold reader → Deliver
+Light: Opening → File plan proposal → [Gate: File plan] → Write → Deliver
+```
+
+- **Opening:** what the project does, the file's role, the file type, your materials and an interview about the content.
+- **File plan:** the use cases, a triage of the material (in the file, in the project instructions, or out), the outline and a sample entry so you judge the format on a real item.
+- **Write:** portable Markdown following Anthropic's and OpenAI's guidance for context material: sections that stand alone when retrieved, rules with their conditions and exceptions, one term per concept, varied examples.
+- **Cold reader and delivery:** a reader who never saw the conversation answers the use cases from the file alone; you get the file, a sentence for your project instructions and test requests.
+
+**Light path** keeps the same opening and compresses the rest into one proposal and one gate, for glossaries, short checklists, templates and revisions of settled content.
+
+Ask the way you normally would — "make a glossary for the GPT", "turn this PDF into a file for the project", "this manual is too long for Claude, slim it down". In Claude Code you can also call it directly with `/superlab:supercontext`. It replaces the earlier create-knowledge skill.
+
 ## Install
 
 ### Claude.ai (web and desktop)
 
 Each skill installs on its own.
 
-1. Download the skill's zip (for example, `superdeck.zip`) from the [latest release](https://github.com/ramonk2o/superlab/releases/latest).
+1. Download the skill's zip (for example, `superdeck.zip` or `supercontext.zip`) from the [latest release](https://github.com/ramonk2o/superlab/releases/latest).
 2. In Claude, open **Customize > Skills**, click **+**, choose **Create skill > Upload a skill**, and upload the zip.
 
 Skills need code execution turned on. If the menu or the upload option looks different, see Anthropic's [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude).

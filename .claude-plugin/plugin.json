@@ -1,5 +1,6 @@
 {
   "name": "superlab",
+  "version": "0.1.0",
   "description": "Skills that plan a piece of writing with you before producing it, with approval gates between phases. Includes superdeck, for presentations.",
   "author": {
     "name": "Ramon Kayo",

@@ -45,7 +45,7 @@ Appendix: full reference, shortcuts, FAQ.
 ## Typical visuals
 Annotated screenshots, numbered step-by-step, process diagram, right vs. wrong example, recap card.
 
-## Specific grill
+## Specific stress test
 - If the person only remembers one thing tomorrow, what should it be?
 - Which part are you including because it matters to you, and not to the learner?
 - How do they practice this before they really need it?

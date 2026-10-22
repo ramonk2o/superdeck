@@ -1,6 +1,6 @@
 # Narrative arcs
 
-Catalog of structures for step 1.5. Propose 2 or 3 that make sense for the audience and objective, with pros and cons, and recommend one.
+Catalog of structures for step 1.3. Propose 2 or 3 that make sense for the audience and objective, with pros and cons, and recommend one.
 
 ## Answer first (pyramid)
 **Structure:** conclusion/recommendation → reasons that support it → evidence for each reason.

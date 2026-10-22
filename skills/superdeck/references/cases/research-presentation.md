@@ -44,7 +44,7 @@ Appendix: questionnaire, sample, full data, more quotes.
 ## Typical visuals
 Sorted horizontal bars, quote with the interviewee's profile, segment heatmap, persona, journey map, comparison between segments, big number with context.
 
-## Specific grill
+## Specific stress test
 - Which insight would make someone change a decision tomorrow?
 - Is this finding about what people say or about what they do?
 - What can't the research claim, and does the audience know that?

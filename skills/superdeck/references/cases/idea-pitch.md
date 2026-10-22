@@ -45,7 +45,7 @@ Appendix: cost, operations and schedule details.
 ## Typical visuals
 Big number for the cost of the problem, before/after, mockup or concrete example, pilot result, investment vs. return table.
 
-## Specific grill
+## Specific stress test
 - What is the first objection the decision-maker will raise, and which slide answers it?
 - If they can only approve half, which half do you want?
 - Why hasn't anyone done this before?

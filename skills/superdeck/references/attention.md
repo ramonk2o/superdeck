@@ -1,6 +1,6 @@
 # Hook, memorable moment and close
 
-Used in step 1.6 and in the express proposal.
+Used in step 1.4 and in the express proposal.
 
 ## Hook
 How the first 30 seconds — or the first slide, in a reading deck — create a tension that only the central idea resolves.

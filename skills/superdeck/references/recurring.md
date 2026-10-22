@@ -20,7 +20,7 @@ Update questions:
 
 ## Later editions
 With the blueprint in hand, go straight to express mode.
-- Phase 1 becomes one round with the update questions, always with a new central idea: the structure repeats, the message doesn't.
-- Phase 2 only reopens if the audience, objective or identity change.
-- If the build option in the blueprint isn't available in this session, choose again as described in `SKILL.md` step 2.6.
-- Recurring decks tend to turn into a list of metrics; the quick grill always asks what is news in this edition.
+- The opening becomes one round with the update questions, and the proposal always brings a new central idea: the structure repeats, the message doesn't.
+- The visual direction and the prototype are reused; they reopen only if the audience, objective or identity change.
+- If the build option in the blueprint isn't available in this session, choose again as described in `SKILL.md` step 2.2.
+- Recurring decks tend to turn into a list of metrics; the stress-test round always asks what is news in this edition.

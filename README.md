@@ -15,15 +15,16 @@ Plans presentations with you before any slide is built: what the deck needs to s
 A bad deck is rarely bad because of its visuals; it is bad because it doesn't know what it wants to say. superdeck keeps three decisions apart — what to say, how to show it, and building it — and moves on only when you approve.
 
 ```
-Full:    Opening → Narrative → [Gate 1: Script] → Visual concept and plan → [Gate 2: Production plan] → Build and review
-Express: Opening → Complete proposal → [Single gate] → Build and review
+Full:    Opening → Narrative → [Gate 1: Script] → Visual direction and plan → [Gate 2: Production plan] → Build and review
+Express: Opening → Complete proposal with prototype → [Single gate] → Build and review
 ```
 
-- **Narrative:** central idea, what goes in, the arc, a hook, a memorable moment and a close that is the concrete ask, then a storyline whose titles state conclusions. A grill presses the idea until it can stand up to the room, and a cold reader who never saw the conversation checks what the titles actually say.
-- **Visual concept and plan:** one visual concept the whole deck orbits, global rules, a low-fidelity prototype you can see, the plan slide by slide, and the build option that fits this deck, chosen from what your session can actually do.
-- **Build and review:** the deck is built from the approved plan, reviewed on the rendered slides, read again by a cold reader, and comes with a presenter kit (anticipated Q&A, backup slides, a short version).
+- **Opening:** who the deck is for and what it should achieve, the kind of deck, your materials and an interview about the content.
+- **Narrative:** central idea, what goes in, the arc, a hook, a memorable moment and a close that is the concrete ask, then a storyline whose titles state conclusions. A stress test presses the idea until it can stand up to the room, and a cold reader who never saw the conversation checks what the titles actually say.
+- **Visual direction and plan:** one visual concept the whole deck orbits and the global rules that come from it, the build option that fits this deck (chosen from what your session can actually do), a low-fidelity prototype you can see, the plan slide by slide, and a review of the plan by someone who wasn't in the conversation.
+- **Build and review:** the deck is built from the approved plan, reviewed on the rendered slides and read again by a cold reader.
 
-**Express mode** compresses everything into one proposal and one gate for internal, low-risk or recurring decks.
+**Express mode** keeps the same opening, then compresses the rest into one proposal with a prototype and one gate, for internal, low-risk or recurring decks.
 
 Ask for a deck the way you normally would — "make a deck out of this report for the board", with or without files. The skill triggers when the content isn't settled yet; if your slide-by-slide script is already written, it stays out of the way. In Claude Code you can also call it directly with `/superlab:superdeck`.
 

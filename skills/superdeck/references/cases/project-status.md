@@ -42,7 +42,7 @@ Appendix: detailed schedule, status by task.
 ## Typical visuals
 Traffic light/status indicators, timeline with milestones and progress, risk table (impact × probability), decision table with options.
 
-## Specific grill
+## Specific stress test
 - If the meeting ends in 5 minutes, which decision must have been made?
 - Is there a risk you think the audience doesn't know about? Why isn't it on the first slide?
 - Should any green here be yellow?

@@ -46,7 +46,7 @@ Appendix: methodology, full metrics, segmentations.
 ## Typical visuals
 Bar vs. target, line with annotated events, waterfall to break down the change, conversion funnel, small multiples to compare segments, big number with context.
 
-## Specific grill
+## Specific stress test
 - If the director reads only the first slide, do they know whether it worked and what to do?
 - Would this result have happened anyway? How do you know?
 - Which metric would a skeptic ask for first, and is it in the deck?

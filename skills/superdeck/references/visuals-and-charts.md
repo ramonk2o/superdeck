@@ -1,6 +1,6 @@
 # Visuals and charts
 
-Used in Phase 2 (steps 2.2, 2.3 and 2.5). The principle: **the visual is chosen by the title's message**, not by the shape of the data. First ask "what does this slide claim?", then "which visual proves it fastest?".
+Used in step 2.1, in step 2.4 and in the express proposal. The principle: **the visual is chosen by the title's message**, not by the shape of the data. First ask "what does this slide claim?", then "which visual proves it fastest?".
 
 ## From message to visual
 

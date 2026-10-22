@@ -11,9 +11,10 @@ Scenarios that check whether superdeck behaves as designed. Run them as describe
 
 **Expected:**
 - Replies in Portuguese.
-- The first reply already reads the data: proposes a central idea (verdict + cause + implication) and flags at least one risk (for example, no control group, or reactivation not yet linked to revenue).
-- The first reply ends with a numbered round in which the first question is the mode, recommending full mode because a director is deciding, and every question carries a recommended answer.
+- The first reply already reads the data: brings the findings that matter and flags at least one risk (for example, no control group, or reactivation not yet linked to revenue).
+- The first reply ends with a numbered round in which the first question is the mode, recommending full mode because a director is deciding, and every question carries a recommended answer; it asks for materials in one line.
 - Treats it as a results-analysis deck.
+- The central idea (verdict + cause + implication) is proposed when the narrative phase starts, after the opening, not in the first reply.
 - Produces no slides, layouts or deck code before the production gate.
 
 **Fail if:** it builds slides in the first replies; it asks open questions with no recommended answers; it states a revenue figure that wasn't given.
@@ -23,15 +24,16 @@ Scenarios that check whether superdeck behaves as designed. Run them as describe
 **Opening message (English):**
 > Weekly status for my team tomorrow, 10 minutes. Launch is on track for December, but the partner integration slipped two weeks and we need to decide whether to cut the cashback module from the MVP.
 
-**Then:** approve the mode, then approve the proposal.
+**Then:** approve the mode, say there is no material beyond the message, then approve the proposal.
 
 **Expected:**
 - Replies in English and recommends express mode.
-- Once express is confirmed, one message brings the full proposal: central idea, storyline with assertion titles, hook and close (the close is the cashback decision), visual concept and global rules, build tool, plus one round of at most five risk questions.
+- The opening asks for materials in one line, as in full mode.
+- Once express is confirmed, one message brings the full proposal: central idea, storyline with assertion titles, hook and close (the close is the cashback decision), visual concept and global rules, build tool, a low-fidelity prototype of two or three slides, plus one round of at most five risk questions.
 - Asks for one explicit approval of the whole proposal (a single gate).
 - After approval, builds and then reviews the result before delivering.
 
-**Fail if:** it runs the full two-gate flow; the decision is not the first or last thing the deck says.
+**Fail if:** it runs the full two-gate flow; no prototype is shown before the gate; the decision is not the first or last thing the deck says.
 
 ## S3 — User wants to skip planning
 
@@ -120,17 +122,31 @@ Scenarios that check whether superdeck behaves as designed. Run them as describe
 
 **Fail if:** it lists an option the session doesn't have; the recommendation ignores the mandatory template; the build option is first asked after Gate 2.
 
-## S10 — Closing grill
+## S10 — Stress test
 
-**Setup:** continue S1 until the storyline is proposed and the closing grill starts.
+**Setup:** continue S1 until the storyline is proposed and the stress test starts.
 
-**Then:** accept the recommended answers, except in the first grill round: disagree with the central idea ("the 8% isn't the story, the 3x conversion of the push is"). In later rounds, accept the recommended answers again.
+**Then:** accept the recommended answers, except in the first stress-test round: disagree with the central idea ("the 8% isn't the story, the 3x conversion of the push is"). In later rounds, accept the recommended answers again.
 
 **Expected:**
-- The first grill round is about the central idea only; questions about the audience, the cut or the close wait for a later round.
+- The first stress-test round is about the central idea only; questions about the audience, the cut or the close wait for a later round.
 - Every question carries a recommended answer and aims at a weak spot of this data (for example, no control group, or reactivation not yet tied to revenue), not only the bank's generic wording.
 - After the disagreement, the central idea is reworked before the branches that depend on it are asked.
-- No round holds more than five questions, and the grill stops once every branch is resolved instead of going through the whole bank.
-- It ends by showing what changed in the central idea and the storyline, and keeps the objections for the presenter kit.
+- No round holds more than five questions, and the stress test stops once every branch is resolved instead of going through the whole bank.
+- It ends by showing what changed in the central idea and the storyline, and resolves each objection: a change to the storyline, an appendix slide, or left out on purpose and said to the user.
 
 **Fail if:** it asks one question at a time with no recommended answer; it asks the bank's questions word for word without tying them to the deck's data; it asks the dependent branches in the same round as the central idea; it invents a figure.
+
+## S11 — Plan review without a separate agent
+
+**Setup:** in a chat that can't start a subagent, continue S9 until every slide of the plan is defined.
+
+**Then:** paste back a review that says slide 3's chart highlights the target instead of the 23% redemption rate, and that slides 4 to 7 are all dense.
+
+**Expected:**
+- Before Gate 2, offers a ready-made prompt for a new conversation, containing the audience profile, the format, the plan and, if possible, the prototype, and asking the six review questions.
+- Fixes the highlight and the rhythm in the plan and shows what changed; anything that changes a title, a figure or the slide list is asked first and written back into the Script.
+- Records the review's result in one line in the Production plan.
+- If the user declines the review, checks the six points itself and records "Plan review: not run".
+
+**Fail if:** it reviews the plan as if it were an outsider and presents that as an independent review; the prompt includes the conversation; it changes a title without updating the Script.

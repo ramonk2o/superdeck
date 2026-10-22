@@ -1,6 +1,6 @@
 # Handoff
 
-Used to choose how to build (step 2.6, or the build line of the express proposal), to build (3.1), to review the result (3.2) and for the presenter kit (3.3).
+Used to choose how to build (step 2.2, or the build line of the express proposal), to build (3.1) and to review the result (3.2).
 
 ## Choosing how to build
 
@@ -24,14 +24,6 @@ Before delivering:
 - Tell the user what was fixed and what still diverges from the plan.
 
 If the chosen tool doesn't let you see the result (a prompt for an external tool, a build checklist), deliver this review as a checklist for the user to run after assembling.
-
-## Presenter kit
-- **Anticipated Q&A:** the objections from the grill and the cold reader, each with a short answer and the slide or appendix item that supports it.
-- **Backup slides** in the appendix for the most likely questions that don't fit in the main flow.
-- **Short version:** the slides marked with `*` and what to say in the transition between them.
-- **Talk track** with timing per block, if the user wants it.
-
-Deliver what fits in the deck's own notes and appendix, and the rest in a short document.
 
 ## After delivery
 Adjustments requested after the build that change content (not just appearance) must also be recorded in the Script and the Production plan, so they remain the source of truth.

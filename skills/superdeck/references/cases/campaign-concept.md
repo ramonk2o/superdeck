@@ -49,7 +49,7 @@ Appendix: all pieces, concept alternatives, detailed schedule, terms and conditi
 ## Typical visuals
 Full-screen key visual, mockups of the pieces in context, mood board, timeline by channel, measurement table. The deck's visual concept usually derives from the campaign's own key visual.
 
-## Specific grill
+## Specific stress test
 - If the audience only remembers one image, which is it?
 - Does the idea work without the tagline?
 - Could a competitor sign this campaign? If so, it isn't specific enough.

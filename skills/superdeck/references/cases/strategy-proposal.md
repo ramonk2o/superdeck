@@ -51,7 +51,7 @@ Appendix: supporting analyses, cost breakdown, benchmarks.
 ## Typical visuals
 2x2 matrix of options, alternatives vs. criteria table, roadmap/timeline, workstream board, chart of the problem (the trend that justifies acting), risk table.
 
-## Specific grill
+## Specific stress test
 - Which alternative would an internal competitor defend, and why does it lose?
 - What happens if nobody does anything in the next 6 months?
 - What is the smallest version of this plan that still proves the thesis?

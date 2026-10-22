@@ -1,14 +1,16 @@
 # Changelog
 
-All notable changes to superdeck are recorded here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [Semantic Versioning](https://semver.org/) as described in [CONTRIBUTING.md](CONTRIBUTING.md#versioning).
+All notable changes to superwriter and its skills are recorded here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [Semantic Versioning](https://semver.org/) as described in [CONTRIBUTING.md](CONTRIBUTING.md#versioning).
 
 ## [Unreleased]
 
-First public release. Compared with the earlier Portuguese draft:
+First public release, with superdeck as the suite's first skill. Compared with the earlier Portuguese draft of superdeck:
 
 ### Added
-- Claude Code plugin and marketplace manifests, so the skill installs with `/plugin`.
-- `scripts/package-skill.sh`, which checks the frontmatter and builds `dist/superdeck.zip` for Claude.ai.
+- The superwriter suite: the repository, the Claude Code plugin and its marketplace are named superwriter, so later skills ship in the same plugin. In Claude Code, superdeck is called as `/superwriter:superdeck`.
+- Claude Code plugin and marketplace manifests, so the suite installs with `/plugin`.
+- `scripts/package-skills.sh`, which checks each skill's frontmatter and builds one zip per skill for Claude.ai, such as `dist/superdeck.zip`.
+- `docs/principles.md`, with the principles every skill in the suite follows; superdeck's own principles are in `docs/superdeck.md`.
 - `references/grill.md` and `references/cold-reader.md`.
 - A ready-made cold-reader prompt to run in a new conversation when the session can't start a subagent; if the user declines, the gate document records "Cold reader: not run".
 - Step 2.6: the skill looks at the build options the session actually offers, weighs them against the deck and recommends one; the choice is recorded in Gate 2.

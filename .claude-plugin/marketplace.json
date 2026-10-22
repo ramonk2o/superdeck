@@ -1,15 +1,15 @@
 {
-  "name": "superdeck",
-  "description": "The superdeck skill for planning presentations before building them",
+  "name": "superwriter",
+  "description": "The superwriter skills, which plan a piece of writing with you before producing it",
   "owner": {
     "name": "Ramon Kayo",
     "url": "https://github.com/ramonk2o"
   },
   "plugins": [
     {
-      "name": "superdeck",
+      "name": "superwriter",
       "source": "./",
-      "description": "Plans presentations with you before any slide is built, with approval gates between narrative, visual plan and build."
+      "description": "Plans writing with you before producing it, with approval gates between phases. Includes superdeck, for presentations."
     }
   ]
 }

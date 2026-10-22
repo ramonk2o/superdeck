@@ -1,10 +1,18 @@
-# superdeck
+# superwriter
 
-An Agent Skill that plans presentations with you before any slide is built: what the deck needs to say, how to hold attention, the visual concept and production plan, and only then the build and its review, with explicit approval gates between phases.
+Agent Skills that plan a piece of writing with you before producing it: first what it needs to say, then how it will look, and only then the output, with explicit approval gates between phases.
+
+| Skill | For | Status |
+|---|---|---|
+| [superdeck](#superdeck) | Presentations, decks and slides | Available |
+
+Every skill asks a round of numbered questions with a recommended answer, so you mostly confirm or correct. Nothing is invented: every number comes from your material or from you, and anything without a source stays marked until it is confirmed. The skills work in any language and converse in yours.
+
+## superdeck
+
+Plans presentations with you before any slide is built: what the deck needs to say, how to hold attention, the visual concept and production plan, and only then the build and its review.
 
 A bad deck is rarely bad because of its visuals; it is bad because it doesn't know what it wants to say. superdeck keeps three decisions apart — what to say, how to show it, and building it — and moves on only when you approve.
-
-## How it works
 
 ```
 Full:    Opening → Narrative → [Gate 1: Script] → Visual concept and plan → [Gate 2: Production plan] → Build and review
@@ -15,15 +23,17 @@ Express: Opening → Complete proposal → [Single gate] → Build and review
 - **Visual concept and plan:** one visual concept the whole deck orbits, global rules, a low-fidelity prototype you can see, the plan slide by slide, and the build option that fits this deck, chosen from what your session can actually do.
 - **Build and review:** the deck is built from the approved plan, reviewed on the rendered slides, read again by a cold reader, and comes with a presenter kit (anticipated Q&A, backup slides, a short version).
 
-Each step asks a round of numbered questions with a recommended answer, so you mostly confirm or correct. **Express mode** compresses everything into one proposal and one gate for internal, low-risk or recurring decks. Nothing is invented: every number comes from your material or from you, and anything without a source stays marked until it is confirmed.
+**Express mode** compresses everything into one proposal and one gate for internal, low-risk or recurring decks.
 
-It works in any language: the skill converses in yours.
+Ask for a deck the way you normally would — "make a deck out of this report for the board", with or without files. The skill triggers when the content isn't settled yet; if your slide-by-slide script is already written, it stays out of the way. In Claude Code you can also call it directly with `/superwriter:superdeck`.
 
 ## Install
 
 ### Claude.ai (web and desktop)
 
-1. Download `superdeck.zip` from the [latest release](https://github.com/ramonk2o/superdeck/releases/latest).
+Each skill installs on its own.
+
+1. Download the skill's zip (for example, `superdeck.zip`) from the [latest release](https://github.com/ramonk2o/superwriter/releases/latest).
 2. In Claude, open **Customize > Skills**, click **+**, choose **Create skill > Upload a skill**, and upload the zip.
 
 Skills need code execution turned on. If the menu or the upload option looks different, see Anthropic's [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
@@ -31,21 +41,17 @@ Skills need code execution turned on. If the menu or the upload option looks dif
 ### Claude Code
 
 ```
-/plugin marketplace add ramonk2o/superdeck
-/plugin install superdeck@superdeck
+/plugin marketplace add ramonk2o/superwriter
+/plugin install superwriter@superwriter
 ```
 
-From a shell, the same commands are `claude plugin marketplace add ramonk2o/superdeck` and `claude plugin install superdeck@superdeck`. New versions reach you when the plugin's version changes.
+From a shell, the same commands are `claude plugin marketplace add ramonk2o/superwriter` and `claude plugin install superwriter@superwriter`. The plugin brings every skill in the suite, and new versions reach you when the plugin's version changes.
 
-To install it as a personal skill instead, copy `skills/superdeck/` to `~/.claude/skills/superdeck/`.
-
-## Use
-
-Ask for a deck the way you normally would — "make a deck out of this report for the board", with or without files. The skill triggers when the content isn't settled yet; if your slide-by-slide script is already written, it stays out of the way. In Claude Code you can also call it directly with `/superdeck:superdeck`.
+To install a single skill as a personal skill instead, copy its folder to your skills folder, for example `skills/superdeck/` to `~/.claude/skills/superdeck/`.
 
 ## Contributing
 
-Issues and pull requests are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) for the repository rules and [docs/design-principles.md](docs/design-principles.md) for how changes are judged. Behavior scenarios live in [evals/scenarios.md](evals/scenarios.md), and changes are listed in [CHANGELOG.md](CHANGELOG.md).
+Issues and pull requests are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) for the repository rules, [docs/principles.md](docs/principles.md) for how changes are judged, and each skill's design file in `docs/`. Behavior scenarios live in [evals/](evals/), and changes are listed in [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 

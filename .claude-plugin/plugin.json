@@ -1,12 +1,12 @@
 {
-  "name": "superdeck",
-  "description": "Plans presentations with you before any slide is built: narrative, then visual concept and production plan, then build and review, with approval gates between phases.",
+  "name": "superwriter",
+  "description": "Skills that plan a piece of writing with you before producing it, with approval gates between phases. Includes superdeck, for presentations.",
   "author": {
     "name": "Ramon Kayo",
     "url": "https://github.com/ramonk2o"
   },
-  "homepage": "https://github.com/ramonk2o/superdeck",
-  "repository": "https://github.com/ramonk2o/superdeck",
+  "homepage": "https://github.com/ramonk2o/superwriter",
+  "repository": "https://github.com/ramonk2o/superwriter",
   "license": "MIT",
-  "keywords": ["presentations", "slides", "deck", "storytelling", "storyline"]
+  "keywords": ["writing", "planning", "presentations", "slides", "deck", "storytelling", "storyline"]
 }

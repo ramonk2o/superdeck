@@ -1,6 +1,6 @@
-# superwriter principles
+# superlab principles
 
-superwriter is a suite of skills that plan a piece of writing with the user before producing it. This file holds the principles every skill in the suite follows and how to judge a proposed change. Each skill also has its own design file (`superdeck.md` for superdeck) with the principles that apply only to it.
+superlab is a suite of skills that plan a piece of writing with the user before producing it. This file holds the principles every skill in the suite follows and how to judge a proposed change. Each skill also has its own design file (`superdeck.md` for superdeck) with the principles that apply only to it.
 
 A change that breaks a principle is a decision about the suite's design, not a wording fix, and needs the maintainer's explicit agreement.
 

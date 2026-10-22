@@ -1,13 +1,13 @@
-# Contributing to superwriter
+# Contributing to superlab
 
-superwriter is a suite of Agent Skills that plan a piece of writing with the user before producing it, with explicit approval gates between phases. Today it has one skill, superdeck, for presentations. This file explains how the repository is organized, the rules every change to a skill follows, and how releases are made.
+superlab is a suite of Agent Skills that plan a piece of writing with the user before producing it, with explicit approval gates between phases. Today it has one skill, superdeck, for presentations. This file explains how the repository is organized, the rules every change to a skill follows, and how releases are made.
 
 Before proposing a behavior change, read [docs/principles.md](docs/principles.md), which holds the principles every skill follows and how proposals are judged, and the design file of the skill you are changing (for superdeck, [docs/superdeck.md](docs/superdeck.md)).
 
 ## Repository layout
 
 ```
-superwriter/                       repository root, also the Claude Code plugin root
+superlab/                          repository root, also the Claude Code plugin root
 ├── .claude-plugin/
 │   ├── marketplace.json           lists the plugin so Claude Code users can install it
 │   └── plugin.json                plugin manifest; the only place the version number lives
@@ -81,7 +81,7 @@ These rules follow the [Agent Skills specification](https://agentskills.io/speci
 
 ## Versioning
 
-superwriter has one version for the whole suite, following [Semantic Versioning](https://semver.org/) applied to the skills' behavior:
+superlab has one version for the whole suite, following [Semantic Versioning](https://semver.org/) applied to the skills' behavior:
 
 - **MAJOR**: breaks how existing users work with any skill — removes, merges or reorders phases or gates, changes the format of the gate documents, removes or renames a skill, or renames files that users or other skills reference.
 - **MINOR**: adds capability without breaking the flow — a new skill, a new case, a new optional step, a new reference file.

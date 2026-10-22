@@ -1,13 +1,13 @@
 {
-  "name": "superwriter",
-  "description": "The superwriter skills, which plan a piece of writing with you before producing it",
+  "name": "superlab",
+  "description": "The superlab skills, which plan a piece of writing with you before producing it",
   "owner": {
     "name": "Ramon Kayo",
     "url": "https://github.com/ramonk2o"
   },
   "plugins": [
     {
-      "name": "superwriter",
+      "name": "superlab",
       "source": "./",
       "description": "Plans writing with you before producing it, with approval gates between phases. Includes superdeck, for presentations."
     }

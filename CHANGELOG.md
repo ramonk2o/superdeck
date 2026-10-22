@@ -1,13 +1,13 @@
 # Changelog
 
-All notable changes to superwriter and its skills are recorded here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [Semantic Versioning](https://semver.org/) as described in [CONTRIBUTING.md](CONTRIBUTING.md#versioning).
+All notable changes to superlab and its skills are recorded here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [Semantic Versioning](https://semver.org/) as described in [CONTRIBUTING.md](CONTRIBUTING.md#versioning).
 
 ## [Unreleased]
 
 First public release, with superdeck as the suite's first skill. Compared with the earlier Portuguese draft of superdeck:
 
 ### Added
-- The superwriter suite: the repository, the Claude Code plugin and its marketplace are named superwriter, so later skills ship in the same plugin. In Claude Code, superdeck is called as `/superwriter:superdeck`.
+- The superlab suite: the repository, the Claude Code plugin and its marketplace are named superlab, so later skills ship in the same plugin. In Claude Code, superdeck is called as `/superlab:superdeck`.
 - Claude Code plugin and marketplace manifests, so the suite installs with `/plugin`.
 - `scripts/package-skills.sh`, which checks each skill's frontmatter and builds one zip per skill for Claude.ai, such as `dist/superdeck.zip`.
 - `docs/principles.md`, with the principles every skill in the suite follows; superdeck's own principles are in `docs/superdeck.md`.

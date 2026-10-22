@@ -1,12 +1,12 @@
 {
-  "name": "superwriter",
+  "name": "superlab",
   "description": "Skills that plan a piece of writing with you before producing it, with approval gates between phases. Includes superdeck, for presentations.",
   "author": {
     "name": "Ramon Kayo",
     "url": "https://github.com/ramonk2o"
   },
-  "homepage": "https://github.com/ramonk2o/superwriter",
-  "repository": "https://github.com/ramonk2o/superwriter",
+  "homepage": "https://github.com/ramonk2o/superlab",
+  "repository": "https://github.com/ramonk2o/superlab",
   "license": "MIT",
   "keywords": ["writing", "planning", "presentations", "slides", "deck", "storytelling", "storyline"]
 }

@@ -1,4 +1,4 @@
-# superwriter
+# superlab
 
 Agent Skills that plan a piece of writing with you before producing it: first what it needs to say, then how it will look, and only then the output, with explicit approval gates between phases.
 
@@ -25,7 +25,7 @@ Express: Opening → Complete proposal → [Single gate] → Build and review
 
 **Express mode** compresses everything into one proposal and one gate for internal, low-risk or recurring decks.
 
-Ask for a deck the way you normally would — "make a deck out of this report for the board", with or without files. The skill triggers when the content isn't settled yet; if your slide-by-slide script is already written, it stays out of the way. In Claude Code you can also call it directly with `/superwriter:superdeck`.
+Ask for a deck the way you normally would — "make a deck out of this report for the board", with or without files. The skill triggers when the content isn't settled yet; if your slide-by-slide script is already written, it stays out of the way. In Claude Code you can also call it directly with `/superlab:superdeck`.
 
 ## Install
 
@@ -33,7 +33,7 @@ Ask for a deck the way you normally would — "make a deck out of this report fo
 
 Each skill installs on its own.
 
-1. Download the skill's zip (for example, `superdeck.zip`) from the [latest release](https://github.com/ramonk2o/superwriter/releases/latest).
+1. Download the skill's zip (for example, `superdeck.zip`) from the [latest release](https://github.com/ramonk2o/superlab/releases/latest).
 2. In Claude, open **Customize > Skills**, click **+**, choose **Create skill > Upload a skill**, and upload the zip.
 
 Skills need code execution turned on. If the menu or the upload option looks different, see Anthropic's [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
@@ -41,11 +41,11 @@ Skills need code execution turned on. If the menu or the upload option looks dif
 ### Claude Code
 
 ```
-/plugin marketplace add ramonk2o/superwriter
-/plugin install superwriter@superwriter
+/plugin marketplace add ramonk2o/superlab
+/plugin install superlab@superlab
 ```
 
-From a shell, the same commands are `claude plugin marketplace add ramonk2o/superwriter` and `claude plugin install superwriter@superwriter`. The plugin brings every skill in the suite, and new versions reach you when the plugin's version changes.
+From a shell, the same commands are `claude plugin marketplace add ramonk2o/superlab` and `claude plugin install superlab@superlab`. The plugin brings every skill in the suite, and new versions reach you when the plugin's version changes.
 
 To install a single skill as a personal skill instead, copy its folder to your skills folder, for example `skills/superdeck/` to `~/.claude/skills/superdeck/`.
 

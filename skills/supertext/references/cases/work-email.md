@@ -18,4 +18,4 @@ A work email, usually short, that informs or asks for something. It is read betw
 <!-- TODO -->
 
 ## Sample passage for the plan
-When the email is a few lines long, the sample is the whole email, as the light path in `SKILL.md` says.
+A short email follows "A text of a few lines" in `SKILL.md`. For a longer email, the sample is the first paragraph, the one that carries the ask.

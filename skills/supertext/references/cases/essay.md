@@ -6,9 +6,12 @@ An argument or a reflection on a subject, short or long. The reader wants to kno
 <!-- TODO -->
 
 ## Diagnosis questions
-<!-- TODO -->
+- What do you believe about this that most of your readers don't?
+- What happened to you that made you think so?
+<!-- TODO: the other diagnosis questions for this kind of text. -->
 
 ## How to phrase the central idea
+The position is the author's, as "Propose before asking" in `SKILL.md` says.
 <!-- TODO: a weak and a strong example. -->
 
 ## Typical structures

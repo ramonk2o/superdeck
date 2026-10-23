@@ -1,14 +1,38 @@
 # Style check
 
-Used in step 3.2. A style check compares the finished text with the style sheet approved in the Text plan, with a reader who has only the two. Who reads, and what to do without a subagent, is in "Checks by someone who wasn't here" in `SKILL.md`.
+Used in step 3.2, and in the light path when the user accepts the check. A style check compares the finished text with the style sheet approved in the Text plan, with a reader who has only the two. Who reads, and what to do without a subagent, is in "Checks by someone who wasn't here" in `SKILL.md`.
 
 ## What the reader receives
 - The finished text.
-- The style sheet from the Text plan, with its traits, and the approved sample passage as the reference for how the text should sound.
+- The traits of the style sheet and the approved sample passage, as the reference for how the text should sound.
+- Never the name of an author whose style the text follows, because the reader would judge against its own idea of that author instead of the traits that were approved.
 - Never the conversation, the central idea, the objective or the material.
 
 ## Prompt
-<!-- TODO: the ready-made prompt — for each trait, whether the text keeps it, with the passages that break it; where the text stops sounding like the sample. -->
+Write it in the user's language and fill in the brackets. Without a subagent, it goes into the same new conversation as the cold reader, after the cold reader's answers.
+
+```
+Below are a style sheet, a sample passage approved as the reference for how a text should sound, and the finished text.
+
+1. For each trait: does the text keep it (yes / mostly / no)? Quote up to three passages that break it, and say how.
+2. Name up to three passages that sound least like the sample, and why.
+3. List habits that run through the text but aren't in the style sheet: repeated constructions, stock phrases, reflexive patterns.
+4. Quote any sentence that sounds copied or closely paraphrased from a published text.
+
+Judge only how it sounds, not whether the content is right.
+
+Style sheet:
+[traits]
+
+Sample passage:
+[sample]
+
+Text:
+[text]
+```
 
 ## Using the answers
-<!-- TODO: how to turn the passages that break a trait into fixes, and when a trait itself should change in the Text plan. -->
+- Fix the passages that break a trait.
+- If a trait breaks all over the text, ask whether the trait is wrong for this text, and change it in the Text plan with the user's approval instead of forcing it.
+- Cut the habits from answer 3.
+- Rewrite anything flagged in answer 4.

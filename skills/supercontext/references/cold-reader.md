@@ -39,4 +39,3 @@ Question 4 matters most for long files, which assistants read in retrieved piece
 - A wrong or guessed answer is a problem of the file, not of the reader: find the missing condition, the rule far from its exception, the term used two ways, or the section that depends on another.
 - A section that doesn't stand alone gets its subject (product, period, audience) named inside it, and any condition or exception it relies on brought next to the rule.
 - A gap the material can't fill is asked, never filled with an invented rule.
-- Fixes within the approved plan go straight in; anything that adds, drops or changes content needs the user's agreement and is written back into the File plan.

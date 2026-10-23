@@ -27,10 +27,9 @@ The official source of each fact (price table, product sheet, regulation, terms)
 5. What isn't covered, and where to look instead
 
 ## Rules for this type
-- One entity per section, named in its heading and in its text: retrieval may return the section alone.
+- One entity per section (one product, one plan, one rule of the program), so a question about it retrieves everything about it.
 - Write facts as facts ("The Gold plan costs R$ 29.90 per month, billed monthly"), not as prose about them.
-- A table holds attributes of comparable items; a rule with conditions goes in text, not in a table cell.
-- Mark validity next to facts that expire, and keep only the current value in the main text.
+- A rule with conditions goes in text under its entity, not in a table cell, where its condition gets cut short.
 - For an FAQ, write each question as people ask it, and an answer that stands alone without the question.
 - State what the assistant should do when a fact is missing (say it isn't in the file, point to the channel), instead of leaving it to guess.
 

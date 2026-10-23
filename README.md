@@ -36,16 +36,16 @@ Plans a knowledge file with you before writing it — a playbook, reference, pro
 A knowledge file is read by a model that never saw the conversation where it was written, often in retrieved pieces. supercontext starts from two or three real requests the file must serve, decides with you what goes in and what stays out, and only then writes.
 
 ```
-Full:  Opening → Interview → [Gate: File plan] → Write → Cold reader → Deliver
-Light: Opening → File plan proposal → [Gate: File plan] → Write → Deliver
+Full:  Opening (interview in rounds) → Plan → [Gate: File plan] → Write (cold reader) → Deliver
+Light: Opening + Plan in one proposal → [Gate: File plan] → Write → Deliver
 ```
 
 - **Opening:** what the project does, the file's role, the file type, your materials and an interview about the content.
-- **File plan:** the use cases, a triage of the material (in the file, in the project instructions, or out), the outline and a sample entry so you judge the format on a real item.
+- **File plan:** the use cases, a triage of the material (in the file, in the project instructions with the detail in the file, or out), the outline and a sample entry so you judge the format on a real item.
 - **Write:** portable Markdown following Anthropic's and OpenAI's guidance for context material: sections that stand alone when retrieved, rules with their conditions and exceptions, one term per concept, varied examples.
 - **Cold reader and delivery:** a reader who never saw the conversation answers the use cases from the file alone; you get the file, a sentence for your project instructions and test requests.
 
-**Light path** keeps the same opening and compresses the rest into one proposal and one gate, for glossaries, short checklists, templates and revisions of settled content.
+**Light path** compresses the opening and the plan into one proposal and one gate, for glossaries, short checklists, templates and revisions of settled content.
 
 Ask the way you normally would — "make a glossary for the GPT", "turn this PDF into a file for the project", "this manual is too long for Claude, slim it down". In Claude Code you can also call it directly with `/superlab:supercontext`. It replaces the earlier create-knowledge skill.
 

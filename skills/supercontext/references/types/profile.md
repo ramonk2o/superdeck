@@ -1,10 +1,11 @@
 # Type: profile
 
-A description of an entity the assistant needs to understand: a company, brand, product, service, audience, persona or project. It is consulted to ground any work about that entity, so the model doesn't fall back on generic assumptions.
+A description of an entity the assistant needs to understand: a company, brand, product, service, audience, persona, project, or a person (the user, a key client contact). It is consulted to ground any work about that entity, so the model doesn't fall back on generic assumptions.
 
 ## What makes it usable
 - What the entity is, in one or two plain sentences.
 - The facts that change the work: what it offers, to whom, how it differs, where it operates, its size or stage when relevant.
+- For a person: role, what they are responsible for, how they like to work and be addressed, and what they decide.
 - For an audience or persona: who they are, what they need, what they already know, what they believe, the words they use, and what puts them off.
 - What the entity is not, or is often confused with.
 - Dates for anything that changes (team, numbers, positioning).
@@ -29,7 +30,7 @@ An about page, a pitch or institutional deck, a positioning or brand document, p
 6. What it is not, and common confusions
 
 ## Rules for this type
-- Name the entity in each section, not "we" or "the company": the section may be read alone, and "we" is ambiguous in a file the assistant reads about someone else.
+- Write about the entity in the third person, by name, not as "we": the assistant reads the file about someone else, and "we" would read as the assistant itself.
 - Turn claims into observable facts: not "innovative and customer-focused" but what it does that shows it ("answers support requests within two hours, seven days a week").
 - Separate fact from aspiration. Positioning the brand wants ("we want to be seen as premium") is labeled as positioning, not stated as a fact about the market.
 - For an audience, mark what comes from research and what is the team's hypothesis, because the model will treat both as true otherwise.

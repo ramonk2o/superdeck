@@ -28,12 +28,11 @@ An approved real output, the system or form it goes into, and any fixed text (si
 4. A filled example, labeled as an example, when the fields aren't obvious
 
 ## Rules for this type
-- Put the template in a fenced code block, so its exact form is preserved and separated from the notes.
-- Mark every variable as `{{field_name}}`, with names that say what they hold (`{{client_first_name}}`, not `{{name1}}`).
-- Say how strict it is. Exact: "Keep this structure and the fixed text exactly". Flexible: "Use this as the default structure; sections can be dropped when empty".
-- For each field, state the rule for missing data: ask for it, leave the line out, or write a fixed fallback. Never fill it with invented content.
+- Give variables names that say what they hold (`{{client_first_name}}`, not `{{name1}}`).
+- State the strictness in the file's opening line. Exact: "Keep this structure and the fixed text exactly". Flexible: "Use this as the default structure; sections can be dropped when empty".
+- For each field, choose one rule for missing data: ask for it, leave the line out, or write a fixed fallback.
 - Keep fixed text (legal lines, signatures) verbatim inside the template.
-- A filled example is labeled as an example, uses fictional data, and shows the template exactly.
+- A filled example uses fictional data and shows the template exactly, with no field renamed or reordered.
 
 ## Pitfalls
 - Placeholders without explanation, which the model fills with plausible inventions.

@@ -27,19 +27,16 @@ The brand or style manual, the policy document, approved texts, rejected texts w
 5. Quick check: the rules most often broken, as a short list
 
 ## Rules for this type
-- Write rules as instructions to apply, in the positive: "Write numbers up to ten in words" rather than "Avoid numerals".
-- Translate every adjective into choices: "friendly" becomes second person, contractions, sentences under 20 words, no jargon.
-- Give the reason in one short sentence when the rule isn't obvious; the model extends it to cases the rule didn't foresee.
-- Keep the exception in the same bullet as the rule.
+- Group rules by the work they apply to (subject lines, body copy, offers, replies to complaints), so a retrieved section carries all the rules for that moment.
 - Label each rule as mandatory or preferred when the material mixes both, so the model knows what it can bend.
-- Show a poor and good pair, labeled as examples, for the rules a description doesn't make clear. Never let an example contradict a rule.
-- Rules that apply to every task in the project (a disclaimer, a legal limit) also need a line in the project instructions; say so in the triage.
+- State priority in the scope section: which rule wins when two collide, and what to do when a client's request contradicts a rule.
+- Show a poor and good pair for each rule a description doesn't make clear (tone, rhythm, how far to go with humor). Never let an example contradict a rule.
+- For voice, list preferred and avoided words with the reason, instead of describing the voice in adjectives.
 
 ## Pitfalls
 - Values and adjectives instead of rules ("be authentic", "premium tone").
 - Long lists of prohibitions with no alternative ("never use…", "don't…").
 - Rules from the manual that no one follows, or that contradict the approved texts; ask which one is true.
-- Overriding emphasis (caps, "CRITICAL") that makes the model apply a rule where it doesn't fit.
 
 ## Sample entry for the plan
 One rule as it will appear, with its condition, exception and reason, and a poor and good pair if the rule needs one.

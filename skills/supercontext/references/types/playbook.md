@@ -30,16 +30,15 @@ An existing procedure or SOP, a real case from start to finish, the message or d
 
 ## Rules for this type
 - One action per step, in the imperative, with its result when it isn't obvious ("Check the order status in the invoice; if it says 'shipped', go to step 5").
-- Write each decision as "If [condition], [action]; otherwise, [action]". A branch that ends nowhere leaves the model improvising.
+- Every branch of a decision ends somewhere: a later step, an output, or an escalation. A branch that ends nowhere leaves the model improvising.
 - Steps that must be done exactly (a legal disclaimer, a fixed sequence) say so; steps where judgment is fine say what good judgment looks for.
-- Put the escalation conditions next to the steps where they arise, and repeat them in the exceptions section only as a list of names.
-- If a step depends on a fact that changes (a deadline, a fee), point to where that fact lives instead of copying it, or state its validity.
+- Put the escalation conditions in the steps where they arise, and list them again in the exceptions section by name only.
+- If a step depends on a fact that changes (a deadline, a fee), name where that fact lives instead of copying it, or state its validity.
 
 ## Pitfalls
 - Describing the process instead of telling what to do ("The team usually analyzes…").
 - The happy path only, with no branches for what actually goes wrong.
 - Long steps that hide several decisions in one paragraph.
-- Rules that apply in every conversation (tone, confidentiality) written only here instead of in the project instructions.
 
 ## Sample entry for the plan
 One step that contains a decision, written as it will appear, with its condition, both branches and an escalation if there is one.

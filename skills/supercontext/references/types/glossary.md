@@ -21,7 +21,7 @@ An existing glossary or onboarding document, internal documents full of jargon, 
 
 ## Typical skeleton
 1. What the glossary covers
-2. Entries, in alphabetical order, or grouped by topic when there are many and they cluster
+2. Entries
 3. Entry format, the same for every term:
 
 ```
@@ -33,11 +33,11 @@ Definition in this domain, in one or two sentences.
 ```
 
 ## Rules for this type
+- Order entries alphabetically, because a glossary is looked up by term; group by topic only when there are many entries and they cluster.
 - Every entry stands alone: the definition doesn't depend on reading the entry above it.
 - Define with what the term is and how it is measured or decided, not with a synonym ("Active member: a member with at least one transaction in the last 90 days").
 - List the synonyms people actually use; they let the model and the search connect a request to the entry.
-- Use the term exactly as defined everywhere else in the project's files.
-- Leave out terms any capable reader knows in their everyday sense.
+- Leave out terms any capable reader knows in their everyday sense, unless the user listed them; then they stay, or are cut only with the user's agreement.
 - Keep the fields of the entry format the same in every entry; drop a field when it is empty instead of filling it.
 
 ## Pitfalls

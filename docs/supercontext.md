@@ -10,14 +10,14 @@ supercontext replaces create-knowledge, which lived outside the suite. It keeps 
 The model that uses the file never saw the interview, and in large projects it reads retrieved excerpts rather than the whole file. Everything about how the file is written follows from this: sections that name their subject, conditions kept next to their rules, one term per concept, no reference to "the above".
 
 **2. Use cases decide what goes in.**
-Before the plan, the skill writes two or three concrete requests the file must serve, including an exception. A block of material goes in only if a use case needs it. The same requests become the cold reader's test and the test requests delivered to the user, so what the file is for, what it holds and how it is checked stay the same thing.
+The plan starts from two or three concrete requests the file must serve, including an exception. A block of material goes in only if a use case needs it. The same requests become the cold reader's test and the test requests delivered to the user, so what the file is for, what it holds and how it is checked stay the same thing.
 
 **3. Plan before writing.**
 The File plan shows the use cases, the triage of the material, the outline and a sample entry before the file exists. The user sees what goes in and what gets cut — especially when slimming a file — and judges the format on one real item instead of a description.
 Implication: no step writes the knowledge file before the gate, except the sample entry.
 
 **4. A file is consulted, not obeyed.**
-Files may be retrieved in part or not at all; project instructions are always read. A rule that must apply in every conversation is routed to the instructions in the triage, and the file keeps how to apply it. Files don't pose as system prompts or claim authority.
+Files may be retrieved in part or not at all; project instructions are always read. A rule that must apply in every conversation is marked "Instructions + file" in the triage: one line goes to the instructions, and the file keeps how to apply it. Files don't pose as system prompts or claim authority.
 
 **5. Smallest file that serves its uses.**
 Every section earns its place through a use case. Common knowledge, background and the interview stay out. Short must not become ambiguous: exact names, numbers, units, conditions, exceptions and negations are always kept.
@@ -29,12 +29,12 @@ The same file should work in any assistant. Markdown is read well by models and 
 Each type has its own reference file with what makes it usable, diagnosis questions, a skeleton, rules and pitfalls. Content consulted at different moments, or updated on different cycles, goes in separate files.
 
 **8. Two paths.**
-Full is for files that encode rules with consequences, condense long or conflicting material, or serve a team. Light is for glossaries, short checklists, templates, small profiles and revisions of settled content: the same opening, one File plan proposal with one round of risk questions, and the cold reader offered in one line.
+Full is for files that encode rules with consequences, condense long or conflicting material, or serve a team. Light is for glossaries, short checklists, templates, small profiles and revisions of settled content: when the request allows, the first reply is already the File plan with one round of risk questions and the gate request, and the cold reader is offered in one line.
 
 ## What supercontext is not
 
 - **Not a summarizer.** A summary serves a person reading once; a knowledge file serves a model applying it many times.
-- **Not a project designer.** It produces one file at a time. Designing a project's file map and instructions belongs to superproject, which hands each file over to supercontext.
+- **Not a project designer.** It produces one file at a time. Designing a project's file map and instructions belongs to a project-design skill, which can hand each file over to supercontext without replacing its gate.
 - **Not a template filler.** Type files give a skeleton and pitfalls as a starting point, never a form to complete.
 
 ## Format choices and their sources

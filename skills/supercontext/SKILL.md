@@ -8,8 +8,8 @@ description: "Plans a knowledge file with the user before writing it, then write
 A knowledge file is read by a model that never saw the conversation where it was written, often in retrieved pieces rather than whole. A file written as a summary of that conversation fails exactly there: it assumes context the reader doesn't have, mixes rules with background, and buries the exception three paragraphs away from the rule it belongs to. So this skill plans the file with the user before writing it — what it is for, what goes in and what stays out — writes it for how assistants actually read files, and checks it with a reader who has only the file.
 
 ```
-Full:  Opening → Interview → [GATE: File plan] → Write → Cold reader → Deliver
-Light: Opening → File plan proposal → [GATE: File plan] → Write → Deliver
+Full:  Opening (interview in rounds) → Plan → [GATE: File plan] → Write (cold reader) → Deliver
+Light: Opening + Plan in one proposal → [GATE: File plan] → Write → Deliver
 ```
 
 Converse in the user's language. Write the File plan in that language too; its labels below are a mold, not fixed text. Write the knowledge file in the language the project works in, usually the user's, and keep terms the project uses verbatim (product names, internal jargon) as they are.
@@ -20,7 +20,7 @@ Recommend a path in the opening, with a one-line reason.
 
 **Full** — for a file that encodes rules with consequences (guidelines a client will hold you to, a policy, a playbook people will follow, a reference with prices or legal terms), that condenses long or conflicting material, or that a team will share. It goes through the interview in rounds, a triage of the material, the File plan gate and the cold reader.
 
-**Light** — for a glossary, a short checklist, an output template, a small profile, or the revision of one file whose content is already settled. The opening is the same, usually in one round. Then one message brings the complete File plan, with its sample entry, plus one round of the 3 to 5 highest-risk questions. The gate approves it; after writing, the cold reader is offered in one line.
+**Light** — for a glossary, a short checklist, an output template, a small profile, or the revision of one file whose content is already settled. When the request and the material already say what the project is, what the file is for and its type, the first reply brings the complete File plan, with its sample entry, and one round of the 3 to 5 highest-risk questions, the path being the first; it ends by asking the user to answer the round and approve the plan. Otherwise one opening round comes first, then that message. If the answers change the plan, show what changed and ask for approval again. After writing, the cold reader is offered in one line. The light path must stay this short: one proposal and one gate.
 
 If something comes up in the light path that changes the course — the material contradicts itself, the file turns out to hold rules with consequences, it should really be two files — suggest switching to full.
 
@@ -41,13 +41,12 @@ If something comes up in the light path that changes the course — the material
 - When the question is a choice between paths (path, file type, one file or two), show the options numbered and mark the recommended one.
 - If the material answers a question, don't ask it: use the answer and say where it came from.
 - Requests without urgency ("if you have the approved texts, send them along") go in one line, outside the numbering.
-- If the session offers a tool for multiple-choice questions, it can carry the round, as long as each question still shows your recommendation.
 
 **Propose before asking.** With material, bring a reading of it. Without material, use the type file to propose a starting point — the typical skeleton and what this kind of file usually needs — and ask for a reaction. Don't ask the user to know about models, tokens or file types: propose the type from the need, and keep their choice if they already made one.
 
 **Collaborate when material is missing.** A missing file, rule or answer never stalls the conversation: propose a draft, raise hypotheses, say where the information might be. The user came to the skill precisely because the content isn't written down yet.
 
-**Nothing invented.** Every rule, fact, number or quote in the file comes from the material or from the user. A suggestion you make to fill a gap is labeled as a proposal until the user adopts it, and never becomes a business rule on its own. Anything without a source is marked `[TO CONFIRM]` until resolved — one invented rule in a project file is applied with confidence in every chat that retrieves it.
+**Nothing invented.** Every rule, fact, number or quote in the file comes from the material or from the user. Derived figures (a sum, an annual price from a monthly one) are welcome once checked. A suggestion you make to fill a gap is labeled as a proposal until the user adopts it, and never becomes a business rule on its own. Anything without a source is marked `[TO CONFIRM]` until resolved — one invented rule in a project file is applied with confidence in every chat that retrieves it.
 
 **Go back when needed.** If something from an earlier step changes (the file's role, the source that held the rules, the split into files), say so clearly and reopen that step. Writing on a base that fell only adds rework.
 
@@ -89,7 +88,9 @@ The opening gathers what the file needs before anything is decided. It is the sa
 - `checklist.md` — criteria to check work against
 - `output-template.md` — the structure an output must follow
 
-Types often combine (guidelines with a few examples, a profile with a short glossary). Read both files and pick the primary one. When parts would be consulted at different moments or updated on different cycles, recommend two files instead of one.
+Where types touch: guidelines govern how the assistant does its work; a reference describes how the product, program or process works; a profile says who the entity is and leaves prices and specs to a reference. "Points expire in 12 months" is a reference fact; "always mention the expiry date when quoting points" is a guideline.
+
+Types often combine (guidelines with a few examples, a profile with a short glossary). Read both files and pick the primary one. When parts would be consulted at different moments, updated on different cycles or owned by different people, recommend two files instead of one. After a split, each file goes through Plan, its own File plan gate and Write in turn, starting with the one the use cases need most, and Deliver covers them together.
 
 **0.4 Materials.** In one line, ask for what would help most; the type file says what. Attachments are optional: a pasted excerpt or a description also works.
 
@@ -99,7 +100,7 @@ Types often combine (guidelines with a few examples, a profile with a short glos
 - **Revising an existing file:** read it first, and bring what works, what a model would misread, and what could go.
 - Then ask the type's diagnosis questions that the material and the conversation leave open.
 
-The first reply already does work: the sentence on the process, the file type, the reading of the material (or the type's starting point), a round opening with the path and the context gaps, and the line asking for materials. In the full path, the interview continues in rounds until the content is clear enough to plan the file; stop as soon as it is, without filling every category. In the light path, move straight to the File plan proposal.
+The first reply already does work: the sentence on the process, the file type, the reading of the material (or the type's starting point), a round opening with the path and the context gaps, and the line asking for materials. In the full path, the interview continues in rounds until the content is clear enough to plan the file; stop as soon as it is, without filling every category. In the light path, the first reply is already the File plan proposal when the request allows it (see Paths).
 
 ## Plan
 
@@ -109,10 +110,10 @@ The first reply already does work: the sentence on the process, the file type, t
 
 | Content | Decision | Reason |
 |---|---|---|
-| … | In / Instructions / Out | … |
+| … | In / Instructions + file / Out | … |
 
 - **In:** it serves a use case.
-- **Instructions:** a rule that must apply in every conversation belongs in the project's instructions, which are always read; a file may be retrieved in part or not at all. Name it here so it reaches the instructions, and keep in the file only the detail of how to apply it.
+- **Instructions + file:** a rule that must apply in every conversation also needs a line in the project's instructions, which are always read; a file may be retrieved in part or not at all. The line goes to the instructions, and the detail of how to apply the rule stays in the file.
 - **Out:** what the model already knows, what no use case needs, duplicates, and outdated content. When revising or slimming a file, this is where the cuts become visible.
 
 In the light path, the triage is a short list inside the plan.
@@ -139,7 +140,7 @@ Left out: …
 Pending [TO CONFIRM]: …
 ```
 
-Ask for explicit approval. Pending items are resolved before writing, or, if the user agrees, go into the file marked as unconfirmed, next to the item they affect.
+Ask for explicit approval. Pending items are resolved before writing, or, if the user agrees, go into the file with their `[TO CONFIRM]` marker, next to the item they affect.
 
 ## Write
 
@@ -147,14 +148,14 @@ Ask for explicit approval. Pending items are resolved before writing, or, if the
 
 **2.2 Cut.** Do a last pass that removes whatever doesn't change a decision in a use case: repetition, common knowledge, background, transitions. Keep every exact name, number, unit, condition, exception and negation.
 
-**2.3 Cold reader.** In the full path, read `references/cold-reader.md` and run it with the file and the use cases. In the light path, offer it in one line. Fixes that change content beyond the approved plan need the user's agreement and are written back into the plan.
+**2.3 Cold reader.** In the full path, read `references/cold-reader.md` and run it with the file and the use cases. In the light path, offer it in one line.
 
 ## Deliver
 
-Save a single `.md` file with the name from the plan, in the requested location or the working folder, as a file and not as an editable document or page, because it will be attached to a project. Don't overwrite unrelated files. When revising, keep the content that is still valid and say what changed.
+Save each file as a single `.md` file with the name from its plan, in the requested location or the working folder, as a file and not as an editable document or page, because it will be attached to a project. Don't overwrite unrelated files. When revising, keep the content that is still valid and say what changed.
 
 Outside the file, deliver in a few lines:
-- **Consultation sentence:** one sentence for the project instructions, naming the file exactly and when to consult it, in the destination's instruction style when known.
+- **Consultation sentence:** one sentence per file for the project instructions, naming the file exactly and when to consult it, in the destination's instruction style when known.
 - **To the instructions:** the rules from the triage that belong in the project instructions, ready to paste.
 - **Test requests:** the use cases, to try in the real project. The cold reader is a check, not a test on the platform; don't claim the file was validated on any assistant.
 - **Open items:** only those that affect use, and the cold reader's result in one line.
@@ -163,4 +164,4 @@ Don't promise automatic retrieval or identical behavior across assistants. Keep 
 
 ## When another skill hands over a file
 
-A skill that designs a whole project (superproject, in this suite) may hand over a file to produce, with the destination, the project's purpose, the file's name, role and trigger, its boundaries with the other files, confirmed answers, materials read and gaps. Start from the gaps: don't repeat the opening or ask for what was given. That skill owns the project's file map and the final delivery, so follow what it asks about gates and delivery. Usually the map was already approved there: present a File plan only for content decisions the user hasn't seen, give one line of progress per file, and hand the consultation sentence and the rules for the instructions back to it instead of to the user.
+A skill that designs a whole project may hand over a file to produce, with the destination, the project's purpose, the file's name, role and trigger, its boundaries with the other files, confirmed answers, materials read and gaps. Start from the gaps: don't repeat the opening or ask for what was given. That skill owns the project's file map and the final delivery: give one line of progress per file, and hand the consultation sentence and the rules for the instructions back to it instead of to the user. It doesn't replace the File plan gate. If the file's content holds decisions the user hasn't approved there (what goes in, what is cut, a rule proposed to fill a gap), present the File plan for them; if everything was already approved, say so in one line and write.

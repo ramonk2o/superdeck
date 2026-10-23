@@ -33,12 +33,11 @@ Output:
 3. Poor and good pairs, when a common mistake is worth showing
 
 ## Rules for this type
-- Choose examples by the decisions they teach, not by how good they look. Three to five per situation usually teach more than one or ten.
-- Vary them in length, topic and structure, so the model learns the principle and not a surface pattern (the same opening, the same length).
-- State what each example shows, and make sure it matches a rule the project states; an example that teaches something no rule says will be copied without knowing why.
-- Keep outputs verbatim in a fenced block so their exact form is preserved and separated from commentary.
-- Remove personal data and anything confidential; replace with clearly fictional stand-ins and say so.
-- Label examples written for the file as synthetic, and never present them as real cases or results.
+- Choose examples by the decisions they teach, not by how good they look: each situation in the use cases that is hard to get right gets its own small set.
+- Vary them in length, topic and structure within a situation, so the model learns the principle and not a surface pattern (the same opening, the same length).
+- Write the "Shows" line as the decision or quality the example illustrates, in words a reviewer would use.
+- Remove personal data and anything confidential; replace it with clearly fictional stand-ins and say so.
+- When an approved output is long, keep it whole if its length is part of what it teaches; otherwise choose a shorter one.
 
 ## Pitfalls
 - Several near-identical examples, which teach the model to copy their shape.

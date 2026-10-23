@@ -15,14 +15,15 @@ Used in step 2.1. These rules make a file usable by a model that never saw the c
 ## Who reads the file
 
 - Write for a capable colleague who knows the world but not this project. Explain what is specific to the project — its rules, names, criteria, exceptions — and skip what any capable reader already knows; each paragraph should earn its place by changing what the model does in a use case.
-- A file is consulted, not obeyed. It doesn't open with "You are…", doesn't claim authority over the instructions, and doesn't ask the model to reveal its reasoning. A rule that must apply every time belongs in the project instructions; the file holds how to apply it.
+- A file is consulted, not obeyed. It doesn't open with "You are…" or claim authority over the project's instructions, because the model reads it as material to apply, and a file that poses as a system prompt competes with the instructions instead of supporting them.
 
 ## Structure
 
 - Open with a title that names the subject and a short paragraph saying what the file covers, what it doesn't, and when to consult it.
 - Use Markdown headings for sections and subsections, named by topic ("Refund conditions", not "Part 2"). Headings are what both a reader and a search find first.
-- Order sections by how they are used: what is consulted most, or first in the task, comes first.
+- Order sections by how they are used: what is consulted most, or first in the task, comes first. Files looked up by name, such as a glossary, follow the order their type sets.
 - Use bullet lists for independent items, numbered lists when order matters, and tables only for comparable items with the same attributes (a catalog, a price list). Keep hierarchy shallow: two heading levels and one level of nesting cover almost everything.
+- Keep tables short. A long table cut into retrieved pieces loses its header row, so split it by entity under its own heading, or name the entity in every row.
 - Plain, single-column text. Layout tricks (columns, text boxes, text inside images) are lost when files are parsed.
 - A file longer than about 100 lines starts with a short list of its sections, so a partial read still shows the whole scope.
 
@@ -58,7 +59,7 @@ When a file is large, assistants search it and read retrieved excerpts, not the 
 - Give numbers with units, currency and the period they refer to.
 - When a fact has a validity, state it ("valid from 2026-07-01") next to the fact, and write the current version in the main text. A superseded version either goes or moves to a section clearly labeled as old; never leave two versions side by side without saying which applies.
 - Keep the source of decisive facts and rules (document and section, link, or "stated by [role]") where it helps someone apply or update them, in a short note after the item or in a sources line at the end of the section.
-- Content still unconfirmed at delivery is marked as such next to the item, so the model doesn't apply it as fact.
+- Content the user agreed to deliver unconfirmed keeps its `[TO CONFIRM]` marker next to the item, and the file's opening paragraph says that marked items are not confirmed, so the model doesn't present them as fact.
 
 ## Format and length
 

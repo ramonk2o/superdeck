@@ -34,7 +34,7 @@ Full is for files that encode rules with consequences, condense long or conflict
 ## What supercontext is not
 
 - **Not a summarizer.** A summary serves a person reading once; a knowledge file serves a model applying it many times.
-- **Not a project designer.** It produces one file at a time. Designing a project's file map and instructions belongs to a project-design skill, which can hand each file over to supercontext without replacing its gate.
+- **Not a project designer.** It produces one file at a time. Designing a project's file map and instructions belongs to superproject, which can hand each file over to supercontext without replacing its gate.
 - **Not a template filler.** Type files give a skeleton and pitfalls as a starting point, never a form to complete.
 
 ## Format choices and their sources

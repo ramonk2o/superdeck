@@ -1,8 +1,8 @@
 # Contributing to superlab
 
-superlab is a suite of Agent Skills that plan a piece of writing with the user before producing it, with explicit approval gates between phases. Today it has superdeck, for presentations, and supercontext, for knowledge files. This file explains how the repository is organized, the rules every change to a skill follows, and how releases are made.
+superlab is a suite of Agent Skills that plan a piece of writing with the user before producing it, with explicit approval gates between phases. Today it has superdeck, for presentations, supercontext, for knowledge files, and superproject, for assistant projects. This file explains how the repository is organized, the rules every change to a skill follows, and how releases are made.
 
-Before proposing a behavior change, read [docs/principles.md](docs/principles.md), which holds the principles every skill follows and how proposals are judged, and the design file of the skill you are changing ([docs/superdeck.md](docs/superdeck.md) or [docs/supercontext.md](docs/supercontext.md)).
+Before proposing a behavior change, read [docs/principles.md](docs/principles.md), which holds the principles every skill follows and how proposals are judged, and the design file of the skill you are changing ([docs/superdeck.md](docs/superdeck.md), [docs/supercontext.md](docs/supercontext.md) or [docs/superproject.md](docs/superproject.md)).
 
 ## Repository layout
 
@@ -15,15 +15,18 @@ superlab/                          repository root, also the Claude Code plugin 
 │   ├── superdeck/                 one folder per skill; each folder is zipped on its own for Claude.ai
 │   │   ├── SKILL.md
 │   │   └── references/            one file per step or case that is read on demand
-│   └── supercontext/
+│   ├── supercontext/
+│   └── superproject/
 ├── evals/
 │   ├── README.md                  how to run scenarios
 │   ├── superdeck.md               behavior scenarios for each skill, one file per skill
-│   └── supercontext.md
+│   ├── supercontext.md
+│   └── superproject.md
 ├── docs/
 │   ├── principles.md              principles shared by every skill
 │   ├── superdeck.md               design principles of each skill, one file per skill
-│   └── supercontext.md
+│   ├── supercontext.md
+│   └── superproject.md
 ├── scripts/
 │   └── package-skills.sh          builds one zip per skill in dist/
 ├── CHANGELOG.md
@@ -64,7 +67,7 @@ These rules follow the [Agent Skills specification](https://agentskills.io/speci
 **Style**
 - Give the reason behind important rules in a short sentence. Avoid all caps and words like "CRITICAL", which make models apply rules rigidly out of context.
 - Describe capabilities, not product or tool names ("if the session can start a subagent", not a tool's name), because the skill runs on different Claude surfaces and tool names change.
-- Keep time-sensitive facts (model names, plan limits, product screens) out of the skill.
+- Keep time-sensitive facts (model names, plan limits, product screens) out of the skill. The exception is a skill whose job depends on them, such as superproject's platform files: those facts live only in dedicated reference files, each with its sources and last-checked date, and the skill checks them before stating a number.
 
 ## Making a change
 

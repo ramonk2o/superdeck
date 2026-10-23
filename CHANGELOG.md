@@ -4,7 +4,9 @@ All notable changes to superlab and its skills are recorded here. The format fol
 
 ## [Unreleased]
 
-Nothing has been released yet. The first release will be 0.1.0, with superdeck and supercontext.
+## [0.1.0] - 2026-10-22
+
+First release, with superdeck, supercontext and superproject.
 
 ### Added
 - superdeck, which plans a presentation with the user before any slide is built. An opening gathers the audience, objective, deck type, materials and content. The narrative phase proposes the central idea, triage, arc, hook, memorable moment and close, and a storyline of assertion titles, presses it with a stress test and a cold reader on the titles, and closes with the Script. The visual phase settles a visual concept and global rules, the build option (chosen from what the session can actually do), a low-fidelity prototype and the plan slide by slide, has the plan reviewed by someone outside the conversation, and closes with the Production plan. Then the deck is built, reviewed on the rendered slides and read by a cold reader.
@@ -20,4 +22,5 @@ Nothing has been released yet. The first release will be 0.1.0, with superdeck a
 - superproject platform files for Claude, ChatGPT and Gemini, each with its sources and last-checked date, and Gemini notebooks as a destination, with Gem requests designed as notebooks.
 - `docs/superproject.md` with superproject's design, and behavior scenarios S1 to S12 in `evals/superproject.md`.
 
-[Unreleased]: https://github.com/ramonk2o/superlab/commits/main
+[Unreleased]: https://github.com/ramonk2o/superlab/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/ramonk2o/superlab/releases/tag/v0.1.0

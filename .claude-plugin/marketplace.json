@@ -9,7 +9,7 @@
     {
       "name": "superlab",
       "source": "./",
-      "description": "Plans writing with you before producing it, with approval gates between phases. Includes superdeck, for presentations, supercontext, for knowledge files, and superproject, for assistant projects."
+      "description": "Plans writing with you before producing it, with approval gates between phases. Includes superdeck, for presentations, supercontext, for knowledge files, superproject, for assistant projects, and supertext, for nonfiction prose."
     }
   ]
 }

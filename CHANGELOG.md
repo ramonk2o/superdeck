@@ -4,6 +4,11 @@ All notable changes to superlab and its skills are recorded here. The format fol
 
 ## [Unreleased]
 
+### Added
+- supertext, which plans a nonfiction text with the user before writing it: essays, blog and newsletter posts, decision records and design docs, work emails where something is at stake, and nonfiction book chapters, in any register, in the user's own voice or in the style of a named author. The opening gathers the reader, objective, occasion, kind of text, style source and materials in question rounds, and researches published sources when the material isn't enough; the Text plan gate approves the central idea, a triage, the structure, the title, first lines and last line, the strongest objection, a style sheet of observable traits and a sample passage. Texts over about 1,500 words are written with the user in blocks of one to three sections. A cold reader with the real reader's profile and a separate style check, which never receives an imitated author's name, review the result, and the text is delivered by the option that fits where it is going. A light path covers short texts with settled content and register rewrites, and a text of a few lines comes back as a draft in the first reply.
+- supertext case files for essays, blog posts, decision records, work emails and book chapters, and `references/style.md`, `references/writing.md`, `references/cold-reader.md`, `references/style-check.md` and `references/handoff.md`.
+- `docs/supertext.md` with supertext's design, and behavior scenarios S1 to S16 in `evals/supertext.md`.
+
 ## [0.1.0] - 2026-10-22
 
 First release, with superdeck, supercontext and superproject.

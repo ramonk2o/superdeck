@@ -1,15 +1,15 @@
 # Style check
 
-Used in step 3.2, and in the light path when the user accepts the check. A style check compares the finished text with the style sheet approved in the Text plan, with a reader who has only the two. Who reads, and what to do without a subagent, is in "Checks by someone who wasn't here" in `SKILL.md`.
+Used in step 3.2, and in the light path when the user accepts the check. A style check compares the finished text with the style sheet approved in the Text plan, with a reader who has only the two. Who reads, when it runs, and what to do without a subagent, are in `SKILL.md`.
 
 ## What the reader receives
 - The finished text.
-- The traits of the style sheet and the approved sample passage, as the reference for how the text should sound.
-- Never the name of an author whose style the text follows, because the reader would judge against its own idea of that author instead of the traits that were approved.
+- The traits of the style sheet, rewritten without the author's or book's name: drop the style-source line and any "my reading of …". A reader given the name would judge against its own idea of that author instead of the traits that were approved.
+- The approved sample passage, as the reference for how the text should sound.
 - Never the conversation, the central idea, the objective or the material.
 
 ## Prompt
-Write it in the user's language and fill in the brackets. Without a subagent, it goes into the same new conversation as the cold reader, after the cold reader's answers.
+Write it in the user's language and fill in the brackets.
 
 ```
 Below are a style sheet, a sample passage approved as the reference for how a text should sound, and the finished text.
@@ -33,6 +33,6 @@ Text:
 
 ## Using the answers
 - Fix the passages that break a trait.
-- If a trait breaks all over the text, ask whether the trait is wrong for this text, and change it in the Text plan with the user's approval instead of forcing it.
+- If a trait breaks all over the text, ask whether the trait is wrong for this text, and change it in the Text plan with the user's approval, as "A gate is explicit approval" in `SKILL.md` says, instead of forcing it.
 - Cut the habits from answer 3.
 - Rewrite anything flagged in answer 4.

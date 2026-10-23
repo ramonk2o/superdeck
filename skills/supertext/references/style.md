@@ -1,6 +1,6 @@
 # Style
 
-Used in steps 0.4 and 1.5. A style is settled as observable traits the user can check on the sample passage, never as adjectives alone ("elegant", "light"), because adjectives mean different things to the user and to the model.
+Used in step 1.5. A style is settled as observable traits the user can check on the sample passage, never as adjectives alone ("elegant", "light"), because adjectives mean different things to the user and to the model.
 
 ## Sources of a style
 - **A register:** formal, casual, technical, conversational. Derive the traits from the reader and the occasion.
@@ -20,7 +20,8 @@ Four to seven traits, each written as "does X, not Y" so it can be checked on th
 ## Writing in the style of an author
 - Describe the author as traits, stated as your reading ("my reading of X: …"), and mark the ones you are unsure of. Your idea of an author can be thin or wrong, and the user may not know the author well enough to judge it; a passage the user likes grounds the traits in something both of you can see.
 - Imitate traits, never passages: write new sentences that share the author's rhythm, distance and choices, and don't reproduce or closely paraphrase the author's text.
-- Leave out signature phrases, catchphrases and recurring images; they turn the text into a caricature.
+- Leave out signature phrases, catchphrases and recurring images; they turn the text into a caricature. A device the author is known for (addressing the reader, say) can be a trait if used sparingly; a phrase can't.
+- Don't reuse the sentences, images or structure of the passage the user brought; it grounds the traits, it isn't a template.
 - Say which traits carry over to the language of the text and which don't, when it differs from the author's.
 - Never present the text as the author's.
 

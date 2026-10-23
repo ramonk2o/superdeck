@@ -7,6 +7,7 @@ Agent Skills that plan a piece of writing with you before producing it: first wh
 | [superdeck](#superdeck) | Presentations, decks and slides | Available |
 | [supercontext](#supercontext) | Knowledge files for AI projects, GPTs and assistants | Available |
 | [superproject](#superproject) | Claude projects, ChatGPT projects and Gemini notebooks | Available |
+| [supertext](#supertext) | Essays, blog posts, decision records, work emails and nonfiction chapters | Available |
 
 Every skill asks a round of numbered questions with a recommended answer, so you mostly confirm or correct. Nothing is invented: every number comes from your material or from you, and anything without a source stays marked until it is confirmed. The skills work in any language and converse in yours.
 
@@ -73,13 +74,33 @@ Light: Opening + Architecture in one proposal → [Gate: Project plan] → Files
 
 Platform details (file limits, memory modes, sharing) change often; the skill keeps them in dated files and checks the official pages when it can. Ask the way you normally would — "I want a project to review our brand's posts", "port my ChatGPT project to Claude", "turn my Gem into a Gemini notebook". In Claude Code you can also call it directly with `/superlab:superproject`. It replaces the earlier create-project skill and works best with supercontext installed.
 
+## supertext
+
+Plans a nonfiction text with you before writing it — an essay, a blog or newsletter post, a decision record or design doc, a work email where something is at stake, a chapter of a nonfiction book — then writes it and has it read by someone who never saw the conversation.
+
+A text usually fails before the first sentence: it doesn't know what it wants the reader to take away, or it sounds like no one in particular. supertext settles what the text says, for whom and in what structure, and shows the voice on a real passage — a register, your own voice or the style of a named author — before writing the rest.
+
+```
+Full:  Opening (interview in rounds) → Plan → [Gate: Text plan] → Write → Review (cold reader, style check) → Deliver
+Light: Opening + Plan in one proposal → [Gate: Text plan] → Write → Deliver
+```
+
+- **Opening:** who reads the text, what it should achieve, the occasion, the kind of text, where the style comes from, your materials and an interview about the content. When the material isn't enough, it researches published sources and shows what it found, with sources, for you to decide.
+- **Text plan:** the central idea, a triage of the material, the structure with each section's point, the title, first lines and last line, the strongest objection and where it is answered, a style sheet of observable traits and a sample passage you judge as prose.
+- **Write:** short texts are written whole; texts over about 1,500 words are written with you, one to three sections at a time.
+- **Review and delivery:** a cold reader with your reader's profile says what the text tells them and what they would do; a separate style check compares the text with the approved style. You get the fixes and the delivery options that fit where the text is going; emails go as drafts, never sent.
+
+**Light path** compresses the opening and the plan into one proposal and one gate, for short texts with settled content and rewrites in another register. A text of a few lines, such as most work emails, comes back as a draft with at most three questions in the first reply.
+
+It writes nonfiction only, and leaves out marketing copy, presentations and quick replies. Ask the way you normally would — "help me write an essay on remote work", "write up why we chose Postgres", "help me tell the client the launch slips two weeks". In Claude Code you can also call it directly with `/superlab:supertext`.
+
 ## Install
 
 ### Claude.ai (web and desktop)
 
 Each skill installs on its own.
 
-1. Download the skill's zip (for example, `superdeck.zip`, `supercontext.zip` or `superproject.zip`) from the [latest release](https://github.com/ramonk2o/superlab/releases/latest).
+1. Download the skill's zip (for example, `superdeck.zip`, `supercontext.zip`, `superproject.zip` or `supertext.zip`) from the [latest release](https://github.com/ramonk2o/superlab/releases/latest).
 2. In Claude, open **Customize > Skills**, click **+**, choose **Create skill > Upload a skill**, and upload the zip.
 
 Skills need code execution turned on. If the menu or the upload option looks different, see Anthropic's [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude).

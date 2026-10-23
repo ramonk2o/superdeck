@@ -1,6 +1,6 @@
 # Cold reader
 
-Used in step 3.1, and in the light path when the user accepts the check. A cold reader checks whether the text works for someone who has only the text — which is exactly the situation of its real reader. Who reads, and what to do without a subagent, is in "Checks by someone who wasn't here" in `SKILL.md`.
+Used in step 3.1, for a text of a few lines when the stakes are high, and in the light path when the user accepts the check. A cold reader checks whether the text works for someone who has only the text — which is exactly the situation of its real reader. Who reads, and what to do without a subagent, is in "Checks by someone who wasn't here" in `SKILL.md`.
 
 ## What the reader receives
 - The finished text, as it will be read.
@@ -21,7 +21,7 @@ Read it once, as that person would, and answer briefly:
 3. Where did you skim or stop following? Quote the first words.
 4. Which claim would you not believe without more evidence?
 5. What did the text assume you knew that you didn't?
-[Email only:] 6. From the subject and the first two lines alone, what is being asked, and by when?
+[Email only:] 6. Looking again at the subject and the first two lines only: what is being asked, and by when?
 
 Answer only from the text; don't guess what the author meant.
 
@@ -29,8 +29,9 @@ Answer only from the text; don't guess what the author meant.
 ```
 
 ## Using the answers
-- Compare answer 1 with the central idea and answer 2 with the objective. A difference in either is a problem of structure, not of the reader.
+- Compare answer 1 with the central idea (for a text of a few lines, with the objective) and answer 2 with the objective. A difference in either is a problem of structure, not of the reader.
 - Answer 3 points to something to cut or move.
 - Answer 4 asks for evidence, or a `[TO CONFIRM]` marker.
 - Answer 5 asks for context.
-- Show the answers next to what was expected and propose fixes. Any fix that changes content needs the user's ok and is written back into the Text plan.
+- Answer 6 is the weakest signal, since the reader has already read the whole email; trust it only when it disagrees with answer 1.
+- Show the answers next to what was expected and propose fixes. Any fix that changes content needs the user's ok, as "A gate is explicit approval" in `SKILL.md` says.

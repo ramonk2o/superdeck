@@ -1,6 +1,6 @@
 # Handoff
 
-Used in Deliver, after the checks. The text is finished; what is left is getting it where it will be read in a form the user can still edit.
+Used to bring the delivery options with the results of the checks (Review), or with the final text of a few lines, and to deliver. The text is finished; what is left is getting it where it will be read in a form the user can still edit.
 
 ## Choosing how to deliver
 

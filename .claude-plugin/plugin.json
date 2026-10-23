@@ -1,7 +1,7 @@
 {
   "name": "superlab",
   "version": "0.1.0",
-  "description": "Skills that plan a piece of writing with you before producing it, with approval gates between phases. Includes superdeck, for presentations, supercontext, for knowledge files, and superproject, for Claude projects, ChatGPT projects and Gemini notebooks.",
+  "description": "Skills that plan a piece of writing with you before producing it, with approval gates between phases. Includes superdeck, for presentations, supercontext, for knowledge files, superproject, for Claude projects, ChatGPT projects and Gemini notebooks, and supertext, for essays, posts, decision records, work emails and nonfiction chapters.",
   "author": {
     "name": "Ramon Kayo",
     "url": "https://github.com/ramonk2o"
@@ -9,5 +9,5 @@
   "homepage": "https://github.com/ramonk2o/superlab",
   "repository": "https://github.com/ramonk2o/superlab",
   "license": "MIT",
-  "keywords": ["writing", "planning", "presentations", "slides", "deck", "storytelling", "storyline", "knowledge", "context", "projects", "gpts", "instructions", "gemini", "notebooks"]
+  "keywords": ["writing", "planning", "presentations", "slides", "deck", "storytelling", "storyline", "knowledge", "context", "projects", "gpts", "instructions", "gemini", "notebooks", "essays", "blog", "emails", "decision-records", "style"]
 }

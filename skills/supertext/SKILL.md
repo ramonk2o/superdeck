@@ -1,13 +1,13 @@
 ---
 name: supertext
-description: "Plans a piece of prose with the user before writing it — what it must say, for whom, in what structure and in what style — then writes it and checks it with a reader who never saw the conversation: long and short essays, blog posts, technical write-ups of a decision, work emails, book chapters, in any register, including in the style of a named author or book. Use when the user wants to write, draft, restructure or rewrite a text whose content or voice isn't settled yet, in any language and even without those terms (e.g., \"help me write an essay on remote work\", \"write up why we chose Postgres\", \"draft a short email to my manager asking for two more weeks\", \"escreve um capítulo no estilo de Machado de Assis\", \"quero um post pro blog sobre o lançamento\"). Not for marketing copy, ads or campaign messages, presentations, knowledge files for AI projects, or quick fixes to a text that is already written."
+description: "Plans a piece of prose with the user before writing it — what it must say, for whom, in what structure and in what style — then writes it and checks it with a reader who never saw the conversation: long and short essays, blog posts, technical write-ups of a decision, work emails, nonfiction book chapters, in any register, including in the style of a named author or book. Use when the user wants to write, draft, restructure or rewrite a text whose content or voice isn't settled yet, in any language and even without those terms (e.g., \"help me write an essay on remote work\", \"write up why we chose Postgres\", \"draft a short email to my manager asking for two more weeks\", \"escreve um ensaio curto no estilo do Machado de Assis\", \"quero um post pro blog sobre o lançamento\"). Not for fiction, marketing copy, ads or campaign messages, presentations, knowledge files for AI projects, or quick fixes to a text that is already written."
 ---
 
 # Supertext
 
 <!-- SKELETON (branch supertext): structure and shared rules are in place; lines marked TODO are open design decisions. Remove this comment before merging. -->
 
-A text usually fails before the first sentence: it doesn't know what it wants the reader to take away, or it sounds like no one in particular. Writing first and fixing later anchors the conversation to a draft that answers neither question. So this skill settles with the user what the text must say, for whom and in what structure, shows the chosen style on a real passage before writing the rest, and then checks the finished text with a reader who never saw the conversation.
+A text usually fails before the first sentence: it doesn't know what it wants the reader to take away, or it sounds like no one in particular. Writing first and fixing later anchors the conversation to a draft that answers neither question. This skill is for nonfiction: texts about real things, meant to be taken as true. It settles with the user what the text must say, for whom and in what structure, shows the chosen style on a real passage before writing the rest, and then checks the finished text with a reader who never saw the conversation.
 
 ```
 Full:  Opening (interview in rounds) → Plan → [GATE: Text plan] → Write → Review (cold reader) → Deliver
@@ -33,7 +33,7 @@ Recommend a path in the opening, with a one-line reason.
 
 **Light** — for a short work email, a short post or essay whose content is already settled, or a rewrite of an existing text in another register. When the request and the material already say who reads it, what it is for and what it says, the first reply brings the complete Text plan, with its sample passage, and one round of the 3 to 5 highest-risk questions, the path being the first; it ends by asking the user to answer the round and approve the plan. Otherwise one opening round comes first, then that message. If the answers change the plan, show what changed and ask for approval again. After writing, the cold reader is offered in one line. The light path must stay this short: one proposal and one gate.
 
-<!-- TODO: decide whether, for a text of a few lines (a short email), the sample passage in the light path is the whole draft. -->
+For a text of a few lines, such as a short email, the sample passage is the whole draft, so approving the plan approves the text.
 
 If something comes up in the light path that changes the course — the material contradicts itself, the reader turns out to be skeptical, the text really needs a decision the user hasn't made — suggest switching to full.
 
@@ -59,18 +59,16 @@ If something comes up in the light path that changes the course — the material
 
 **Collaborate when material is missing.** A missing file, fact or answer never stalls the conversation: propose a draft, raise hypotheses, say where the information might be. The user came to the skill precisely because the text isn't clear yet.
 
-**Nothing invented.** Every fact, number, quote or event in a text that claims to be true comes from the material or from the user. Derived figures (sums, changes) are welcome once checked. An argument or example you suggest is labeled as a proposal until the user adopts it. Anything without a source is marked `[TO CONFIRM]` until resolved — one invented fact in a signed text destroys the credibility of everything else. Fiction and the invented parts of an essay are the user's call, not facts.
-
-<!-- TODO: settle how "nothing invented" reads for fiction and book chapters (invented plot is fine; real facts inside fiction still need a source?). -->
+**Nothing invented.** Every fact, number, quote or event in a text that claims to be true comes from the material or from the user. Derived figures (sums, changes) are welcome once checked. An argument or example you suggest is labeled as a proposal until the user adopts it. Anything without a source is marked `[TO CONFIRM]` until resolved — one invented fact in a signed text destroys the credibility of everything else. The skill writes nonfiction only; if the user wants fiction, say so in one line and leave the skill.
 
 **Go back when needed.** If something from an earlier step changes (the reader, the central idea, a fact the argument rested on), say so clearly and reopen that step. Writing on a base that fell only adds rework.
 
 **A gate is explicit approval.** "OK", "approved", "go ahead" count. Silence, a change of subject or a passing comment do not — ask. An "ok to all" in a question round approves the answers, not the gate: the gate has its own request. After the gate, the Text plan is a closed specification: writing doesn't add, drop or swap anything decided there without asking, and changes made later are written back into the plan.
 
-**Checks by someone who wasn't here.** The cold reader (step 3.1) reads the finished text as its real reader would. A model inside this conversation already knows what the text meant to say, so never play that reader yourself.
-- If the session can start a subagent, give it only what `references/cold-reader.md` says, and nothing else.
-- Otherwise, give the user the ready-made prompt from that file, to paste into a new conversation with no access to this one, and ask them to paste the answers back. In the light path, offer it in one line.
-- If the user prefers to skip it, record "Cold reader: not run" in the delivery note.
+**Checks by someone who wasn't here.** Two steps check the finished text with a reader who did not follow the conversation: the cold reader (3.1), who reads it as its real reader would, and the style check (3.2), which compares it with the style sheet. A model inside this conversation already knows what the text meant to say and how it was meant to sound, so never play those readers yourself.
+- If the session can start a subagent, give it only what the step's reference file says, and nothing else.
+- Otherwise, give the user the ready-made prompt from that file, to paste into a new conversation with no access to this one, and ask them to paste the answers back. In the light path, offer both in one line.
+- If the user prefers to skip one, record "not run" for it in the delivery note.
 
 ## Materials
 
@@ -78,7 +76,7 @@ Read the materials before asking about them. Don't claim to have read a file fro
 
 Keep the origin of each fact and quote — file and section or page, a link, or "stated by the user" — while you work. Don't turn an isolated example into a general claim, or a proposal into a decision. If two sources disagree on something the text depends on, the next round resolves it.
 
-<!-- TODO: research outside the material (for an essay that needs facts) — when, and how sources reach the text. -->
+**Research when the material isn't enough.** When the subject looks more complex than the material and the user can settle — a claim that needs evidence, a context the reader won't have, a counterargument no one raised — research outside it, if the session can search, and say in one line what you are looking for. Facts found this way keep their source, are shown in the Text plan like any other fact, and never replace what the user or the material says. If the session can't search, say what is missing and where it might be.
 
 ## Opening
 
@@ -151,7 +149,7 @@ Ask for explicit approval. Pending items are resolved before writing, or, if the
 
 **2.1 Write.** Treat the Text plan as the specification. Read `references/writing.md` and follow it with the case file and the style sheet. If a section can't be written as planned (the fact isn't there, the argument doesn't hold), stop and go back to the plan rather than improvising.
 
-<!-- TODO: long texts (long essay, chapter) — write and show section by section, or all at once? -->
+**Long texts, section by section.** A long text — a long essay, a chapter, anything with more than a few sections — is written one section at a time with the user: show the section, apply what they adjust, and move to the next when they say so. Approving a section is not a new gate; if an adjustment changes the central idea, the structure or the style, write it back into the Text plan first. Short texts are written whole.
 
 **2.2 Revise.** A last pass against the style sheet and the structure: each section makes its point, and the text sounds like the sample. Cut what doesn't serve the objective.
 
@@ -159,10 +157,10 @@ Ask for explicit approval. Pending items are resolved before writing, or, if the
 
 **3.1 Cold reader.** In the full path, read `references/cold-reader.md` and run it with the finished text. In the light path, offer it in one line.
 
-<!-- TODO: whether a separate style check runs (a reader with the style sheet and the text only), or the cold reader covers it. -->
+**3.2 Style check.** In the full path, read `references/style-check.md` and run it with the finished text and the style sheet. In the light path, offer it in the same line as the cold reader. It is separate from the cold reader because a reader judging what the text says shouldn't be told how it was meant to sound.
 
 ## Deliver
 
-<!-- TODO: the delivered format — in the reply, an editable document when the session can create one, or a file — by kind of text and length. -->
+Read `references/handoff.md` and offer the ways to deliver the text that fit where it is going, with your recommendation.
 
 Outside the text, deliver in a few lines: what changed from the plan, if anything; open items marked `[TO CONFIRM]`; and the cold reader's result in one line. Keep the conversation and the delivery notes out of the text.

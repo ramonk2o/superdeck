@@ -2,7 +2,7 @@
 
 <!-- DRAFT (branch supertext): principles below are proposals until the maintainer approves them. -->
 
-Why supertext works the way it does. The skill's goal is prose that says one clear thing to its reader and sounds the way the author wants: essays, blog posts, decision records, work emails and book chapters, in any register or in the style of a named author. It follows the suite principles in [principles.md](principles.md); the principles below apply only to supertext. A change that breaks one of them is a decision about the skill's design, not a wording fix, and needs the maintainer's explicit agreement.
+Why supertext works the way it does. The skill's goal is nonfiction prose that says one clear thing to its reader and sounds the way the author wants: essays, blog posts, decision records, work emails and nonfiction book chapters, in any register or in the style of a named author. It follows the suite principles in [principles.md](principles.md); the principles below apply only to supertext. A change that breaks one of them is a decision about the skill's design, not a wording fix, and needs the maintainer's explicit agreement.
 
 ## Principles
 
@@ -22,10 +22,18 @@ Length, structure and register follow from who reads the text and what they shou
 **5. Two paths.**
 Full is for texts with an argument or decision that matters, outside or skeptical readers, long texts and voices the user cares about. Light is for short work emails, short texts with settled content and rewrites in another register: one proposal with the sample passage, one round of risk questions and one gate.
 
-<!-- TODO: principle on the cold reader for this skill (what it checks that the user can't). -->
+**6. Long texts are written with the user, section by section.**
+A chapter or a long essay written in one go comes back as a block the user can only accept or redo. Showing one section at a time lets them adjust while the rest is still unwritten. Approving a section is not a gate; a change that touches the central idea, the structure or the style goes back into the Text plan.
+
+**7. Meaning and style are checked separately.**
+After writing, the cold reader checks what the text says to its reader, and the style check, with only the style sheet and the text, checks whether it sounds as approved. They stay separate because a reader told how the text should sound stops reading it as its real reader would.
+
+**8. Delivery follows where the text is going.**
+The skill offers the delivery options the session actually has, judged against the occasion in the Text plan, and recommends one. An email is delivered as a draft, never sent.
 
 ## What supertext is not
 
+- **Not for fiction.** It writes about real things, meant to be taken as true; stories, novels and fictional chapters are out of scope.
 - **Not a copywriter.** Ads, campaign messages and other marketing copy belong to a separate skill.
 - **Not a deck or a knowledge file.** Presentations belong to superdeck, files for AI projects to supercontext.
 - **Not a proofreader.** Fixing typos or tightening a finished text doesn't need a plan.

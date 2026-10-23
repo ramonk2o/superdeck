@@ -1,6 +1,6 @@
 # Case: book chapter
 
-A chapter of a book, fiction or nonfiction, read as part of a whole. The reader wants **to understand where they are in the book and to have a reason to turn the page**.
+A chapter of a nonfiction book, read as part of a whole. The reader wants **to understand where they are in the book and to have a reason to turn the page**.
 
 ## What the reader needs to leave with
 <!-- TODO -->
@@ -9,7 +9,7 @@ A chapter of a book, fiction or nonfiction, read as part of a whole. The reader 
 <!-- TODO: including what came before and what comes after this chapter. -->
 
 ## How to phrase the central idea
-<!-- TODO: what a central idea means for a fiction chapter. -->
+<!-- TODO: a weak and a strong example. -->
 
 ## Typical structures
 <!-- TODO -->

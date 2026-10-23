@@ -4,22 +4,16 @@ All notable changes to superlab and its skills are recorded here. The format fol
 
 ## [Unreleased]
 
-### Added
-- supercontext, which plans a knowledge file with the user before writing it and replaces create-knowledge. The opening gathers the project, the file's role, its type and the materials; the File plan gate approves the use cases, a triage of the material (in the file, in the project instructions with the detail in the file, or out), the outline and a sample entry; the file is written as portable Markdown following Anthropic's and OpenAI's guidance for context material, and a cold reader answers the use cases from the file alone. A light path covers glossaries, short checklists, templates and revisions with one proposal and one gate.
-- supercontext type files for playbooks, references, profiles, guidelines, glossaries, example sets, checklists and output templates, and `references/writing.md` with the writing rules for every type.
-- `docs/supercontext.md` with supercontext's design and the sources behind its format choices, and behavior scenarios S1 to S11 in `evals/supercontext.md`.
-
-## [0.1.0] - 2026-10-22
-
-Initial release, with superdeck as the suite's first skill.
+Nothing has been released yet. The first release will be 0.1.0, with superdeck and supercontext.
 
 ### Added
 - superdeck, which plans a presentation with the user before any slide is built. An opening gathers the audience, objective, deck type, materials and content. The narrative phase proposes the central idea, triage, arc, hook, memorable moment and close, and a storyline of assertion titles, presses it with a stress test and a cold reader on the titles, and closes with the Script. The visual phase settles a visual concept and global rules, the build option (chosen from what the session can actually do), a low-fidelity prototype and the plan slide by slide, has the plan reviewed by someone outside the conversation, and closes with the Production plan. Then the deck is built, reviewed on the rendered slides and read by a cold reader.
 - superdeck express mode, for internal, low-risk or recurring decks: the same opening, one proposal with a prototype and a single gate.
 - superdeck deck cases for results analysis, strategy proposals, idea pitches, research presentations, project status, training and campaign concepts, and the Recurring blueprint for periodic decks.
+- supercontext, which plans a knowledge file with the user before writing it and replaces create-knowledge. The opening gathers the project, the file's role, its type and the materials; the File plan gate approves the use cases, a triage of the material (in the file, in the project instructions with the detail in the file, or out), the outline and a sample entry; the file is written as portable Markdown following Anthropic's and OpenAI's guidance for context material, and a cold reader answers the use cases from the file alone. A light path covers glossaries, short checklists, templates and revisions with one proposal and one gate.
+- supercontext type files for playbooks, references, profiles, guidelines, glossaries, example sets, checklists and output templates, and `references/writing.md` with the writing rules for every type.
 - Checks by someone outside the conversation run through a subagent, or through a ready-made prompt for a new conversation when the session can't start one.
-- The superlab Claude Code plugin and marketplace, with superdeck called as `/superlab:superdeck`, and `scripts/package-skills.sh`, which builds one zip per skill for Claude.ai.
-- `docs/principles.md` with the suite's principles, `docs/superdeck.md` with superdeck's design, `CONTRIBUTING.md`, and behavior scenarios S1 to S11 in `evals/superdeck.md`.
+- The superlab Claude Code plugin and marketplace, with each skill called as `/superlab:<skill>` (for example, `/superlab:superdeck`), and `scripts/package-skills.sh`, which builds one zip per skill for Claude.ai.
+- `docs/principles.md` with the suite's principles, `docs/superdeck.md` and `docs/supercontext.md` with each skill's design, `CONTRIBUTING.md`, and behavior scenarios S1 to S11 in `evals/superdeck.md` and `evals/supercontext.md`.
 
-[Unreleased]: https://github.com/ramonk2o/superlab/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/ramonk2o/superlab/releases/tag/v0.1.0
+[Unreleased]: https://github.com/ramonk2o/superlab/commits/main

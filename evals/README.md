@@ -6,7 +6,7 @@ Each skill has a scenario file here (`superdeck.md` for superdeck) with scenario
 
 1. Install the version under test (upload the skill's zip in Claude.ai, or load the plugin in Claude Code).
 2. Start a **new conversation** for each scenario. Never test in the conversation where the change was written, because that conversation already knows what the skill should do.
-3. Send the opening message exactly as written, then play the user as described in "Then".
+3. Send the opening message exactly as written, then play the user as described in "Then". Most opening messages don't name the skill, so its first reply should be the offer from the skill's Starting section. Unless the scenario says how to answer the offer, accept it, and read "first reply" in the expected behaviors as the reply that follows.
 4. Check each expected behavior and mark it pass or fail. A single "Fail if" item fails the scenario.
 5. Record the result in the pull request or release notes: skill, scenario, model, date, pass or fail per item, and a short note for each failure.
 6. Run each scenario with the model you use day to day; before a MAJOR release, also run it with a smaller model, since instructions that work for a large model can be too thin for a small one.

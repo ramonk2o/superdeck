@@ -16,6 +16,15 @@ Express: Opening → Complete proposal with prototype → [SINGLE GATE] → PHAS
 
 Converse in the user's language. Write the gate documents in that language too; the labels in the templates below are a mold, not fixed text.
 
+## Starting
+
+How the skill started decides the first reply, because someone who asked for slides didn't necessarily ask for a planning process.
+
+- **Called by name** (the user named this skill or used its command): start the Opening.
+- **Started by the subject of the request:** the first reply only offers the skill. In two or three sentences, say what it does differently (settles what the deck needs to say before any slide is built) and what it costs (a few rounds of questions, or one proposal and one approval in express mode). Then ask whether to plan with it, with your recommended answer and a one-line reason drawn from the request. Don't bring a reading of the materials or ask anything else yet, since the answer changes everything that follows.
+- **Accepted:** start the Opening; the reply that follows is what the Opening calls the first reply.
+- **Declined:** leave the skill. Handle the request as you would without it, with none of its question rounds, gates or documents, and don't offer it again in this conversation.
+
 ## Modes
 
 Recommend a mode in the opening, with a one-line reason.

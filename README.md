@@ -10,6 +10,8 @@ Agent Skills that plan a piece of writing with you before producing it: first wh
 
 Every skill asks a round of numbered questions with a recommended answer, so you mostly confirm or correct. Nothing is invented: every number comes from your material or from you, and anything without a source stays marked until it is confirmed. The skills work in any language and converse in yours.
 
+A skill that starts from what you asked, rather than from its name, first offers to plan with you and says what that costs; say no and Claude handles the request as usual. Calling a skill by name, such as "use superdeck", skips the offer.
+
 ## superdeck
 
 Plans presentations with you before any slide is built: what the deck needs to say, how to hold attention, the visual concept and production plan, and only then the build and its review.
@@ -28,7 +30,7 @@ Express: Opening → Complete proposal with prototype → [Single gate] → Buil
 
 **Express mode** keeps the same opening, then compresses the rest into one proposal with a prototype and one gate, for internal, low-risk or recurring decks.
 
-Ask for a deck the way you normally would — "make a deck out of this report for the board", with or without files. The skill triggers when the content isn't settled yet; if your slide-by-slide script is already written, it stays out of the way. In Claude Code you can also call it directly with `/superlab:superdeck`.
+Ask for a deck the way you normally would — "make a deck out of this report for the board", with or without files. The skill offers itself when the content isn't settled yet; if your slide-by-slide script is already written, it stays out of the way. In Claude Code you can also call it directly with `/superlab:superdeck`.
 
 ## supercontext
 

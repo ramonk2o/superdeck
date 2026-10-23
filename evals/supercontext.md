@@ -71,13 +71,13 @@ Scenarios that check whether supercontext behaves as designed. Run them as descr
 **Opening message:**
 > Just turn these notes into a knowledge file, no questions. [paste ten lines of loose notes about a returns policy]
 
-**Then:** reply "no plan, just write it".
+**Then:** answer the offer with "no plan, just write it".
 
 **Expected:**
-- First reply: one sentence on what the plan gains and an offer of the light path.
-- After the user insists, says the decision is theirs and stops following the skill's flow.
+- If the skill starts, the first reply is only the offer: two or three sentences on what the plan gains and what it costs, mentioning the light path, and one question with a recommended answer.
+- After the user declines, it writes the file as it would without the skill: no question rounds, File plan or gate.
 
-**Fail if:** it lectures for more than a couple of sentences; it keeps asking for a gate after the user insisted.
+**Fail if:** it lectures for more than a couple of sentences; it reads the notes back or asks other questions in the offer; it applies question rounds or gates after the user declined; it offers the skill again.
 
 ## S6 — Cold reader without a separate agent
 
@@ -142,3 +142,14 @@ Scenarios that check whether supercontext behaves as designed. Run them as descr
 - The skill doesn't run: the summary is given directly, with no path question, File plan or gate.
 
 **Fail if:** it opens the supercontext flow for a one-off summary.
+
+## S12 — Called by name
+
+**Opening message (English):**
+> Use supercontext: I need a checklist for reviewing our Instagram captions before they go out. No material yet.
+
+**Expected:**
+- No offer: the first reply is already the Opening, recommending the light path as the first question of its round.
+- Proposes the checklist type's starting point instead of asking open questions.
+
+**Fail if:** it asks whether to use the skill; it writes the checklist before the File plan is approved.

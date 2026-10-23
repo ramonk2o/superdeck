@@ -38,6 +38,10 @@ Work that goes to clients, asks for a decision or money, or faces a skeptical au
 **10. Capabilities, not tool names.**
 The skills run on different Claude surfaces and tool names change, so they describe what the session can do ("if the session can start a subagent") instead of naming a product or tool.
 
+**11. Offer before taking over.**
+Someone who asked for slides or a file didn't necessarily ask for a planning process, and a skill that takes over unasked costs more trust than it saves. So a skill started by the subject of a request, rather than by its name, first offers itself in one short message: what it does differently, what it costs, and a recommended answer. If the user declines, the request is handled as it would be without the skill, and the skill isn't offered again in that conversation.
+Implication: a skill called by name, or handed work by another skill the user already accepted, starts without the offer. The offer is one question on its own, since its answer changes everything after it.
+
 ## Judging a proposal
 
 Ask, in order:

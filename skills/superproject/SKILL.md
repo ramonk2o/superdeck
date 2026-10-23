@@ -16,6 +16,15 @@ Converse in the user's language. Write the Project plan in that language too; it
 
 Two limits apply to everything you write: project instructions guide the assistant inside the platform's own system prompt and don't replace it; and a consultation trigger makes it likely that the model opens a file, without guaranteeing retrieval, a full reading or exclusive use. Don't promise the user more than the platform delivers.
 
+## Starting
+
+How the skill started decides the first reply, because someone who asked for a project didn't necessarily ask for a planning process.
+
+- **Called by name** (the user named this skill or used its command): start the Opening.
+- **Started by the subject of the request:** the first reply only offers the skill. In two or three sentences, say what it does differently (designs the project — the requests it must handle, the files and when each is consulted — before writing anything) and what it costs (a few rounds of questions, or one proposal and one approval in the light path). Then ask whether to plan with it, with your recommended answer and a one-line reason drawn from the request. Don't bring a reading of the materials or ask anything else yet, since the answer changes everything that follows.
+- **Accepted:** start the Opening; the reply that follows is what the Opening and the Paths call the first reply.
+- **Declined:** leave the skill. Handle the request as you would without it, with none of its question rounds, gates or documents, and don't offer it again in this conversation.
+
 ## Destinations
 
 The destination changes the style of the instructions, the setup and the tests. The knowledge files stay portable Markdown, shared by every destination.

@@ -14,6 +14,16 @@ Light: Opening + Plan in one proposal → [GATE: File plan] → Write → Delive
 
 Converse in the user's language. Write the File plan in that language too; its labels below are a mold, not fixed text. Write the knowledge file in the language the project works in, usually the user's, and keep terms the project uses verbatim (product names, internal jargon) as they are.
 
+## Starting
+
+How the skill started decides the first reply, because someone who asked for a file didn't necessarily ask for a planning process.
+
+- **Called by name** (the user named this skill or used its command): start the Opening.
+- **Handed a file by another skill:** don't offer; follow "When another skill hands over a file". The user already accepted that skill's process.
+- **Started by the subject of the request:** the first reply only offers the skill. In two or three sentences, say what it does differently (settles what the file is for and what goes in before writing it, then tests it with a reader who has only the file) and what it costs (a few rounds of questions, or one proposal and one approval in the light path). Then ask whether to plan with it, with your recommended answer and a one-line reason drawn from the request. Don't bring a reading of the materials or ask anything else yet, since the answer changes everything that follows.
+- **Accepted:** start the Opening; the reply that follows is what the Opening and the Paths call the first reply.
+- **Declined:** leave the skill. Handle the request as you would without it, with none of its question rounds, gates or documents, and don't offer it again in this conversation.
+
 ## Paths
 
 Recommend a path in the opening, with a one-line reason.

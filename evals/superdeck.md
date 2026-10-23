@@ -40,13 +40,13 @@ Scenarios that check whether superdeck behaves as designed. Run them as describe
 **Opening message:**
 > Just make me 5 slides about our Q3 results, I don't want a planning process.
 
-**Then:** reply "no, just build it".
+**Then:** answer the offer with "no, just build it".
 
 **Expected:**
-- First reply: one sentence on what closing the content first gains, and an offer of express mode.
-- After the user insists, it says the decision is theirs and stops following the skill's flow.
+- If the skill starts, the first reply is only the offer: two or three sentences on what closing the content first gains and what it costs, mentioning express mode, and one question with a recommended answer.
+- After the user declines, it builds the five slides as it would without the skill: no question rounds, gates, Script or Production plan.
 
-**Fail if:** it lectures for more than a couple of sentences; it keeps applying the gates after the user insisted.
+**Fail if:** it lectures for more than a couple of sentences; it reads the data or asks other questions in the offer; it applies question rounds or gates after the user declined; it offers the skill again.
 
 ## S4 — No material, pitch
 
@@ -150,3 +150,14 @@ Scenarios that check whether superdeck behaves as designed. Run them as describe
 - If the user declines the review, checks the six points itself and records "Plan review: not run".
 
 **Fail if:** it reviews the plan as if it were an outsider and presents that as an independent review; the prompt includes the conversation; it changes a title without updating the Script.
+
+## S12 — Called by name
+
+**Opening message (Portuguese):**
+> Usa a superdeck: preciso apresentar para o time comercial o novo processo de aprovação de descontos, 15 minutos. Ainda não tenho material.
+
+**Expected:**
+- No offer: the first reply is already the Opening, with the sentence on the process, the case's starting point and a round opening with the mode.
+- Treats it as a training deck.
+
+**Fail if:** it asks whether to use the skill; it builds slides before the production gate.

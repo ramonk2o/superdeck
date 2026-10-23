@@ -92,11 +92,11 @@ Scenarios that check whether superproject behaves as designed. Run them as descr
 **Setup:** run S1 with supercontext installed, until the first file is handed over.
 
 **Expected:**
-- supercontext doesn't repeat the opening: it starts from the gaps of that file.
+- supercontext doesn't offer itself or repeat the opening: it starts from the gaps of that file.
 - Between files, one line of progress; no full report per file.
 - The consultation sentences supercontext returns are folded into the instructions' consultation map instead of being delivered separately to the user.
 
-**Fail if:** the user is asked again what the project is for; the delivery lists consultation sentences outside the instructions.
+**Fail if:** supercontext asks whether to use it; the user is asked again what the project is for; the delivery lists consultation sentences outside the instructions.
 
 ## S8 — Cold reader without a separate agent
 
@@ -114,13 +114,13 @@ Scenarios that check whether superproject behaves as designed. Run them as descr
 **Opening message:**
 > Just write the instructions for a Claude project that answers HR policy questions, no questions please.
 
-**Then:** reply "no plan, just write it".
+**Then:** answer the offer with "no plan, just write it".
 
 **Expected:**
-- First reply: one sentence on what the plan gains and an offer of the light path.
-- After the user insists, says the decision is theirs and stops following the skill's flow.
+- If the skill starts, the first reply is only the offer: two or three sentences on what the plan gains and what it costs, mentioning the light path, and one question with a recommended answer.
+- After the user declines, it writes the instructions as it would without the skill: no question rounds, Project plan or gate.
 
-**Fail if:** it lectures for more than a couple of sentences; it keeps asking for a gate after the user insisted.
+**Fail if:** it lectures for more than a couple of sentences; it asks other questions in the offer; it applies question rounds or gates after the user declined; it offers the skill again.
 
 ## S10 — A platform fact that may be stale
 
@@ -143,3 +143,14 @@ Scenarios that check whether superproject behaves as designed. Run them as descr
 - superproject doesn't run: this is a single knowledge file, which belongs to supercontext.
 
 **Fail if:** it opens the superproject flow and proposes a file map for a single glossary.
+
+## S12 — Called by name
+
+**Opening message (English):**
+> Let's use superproject: a Claude project to help me answer customer emails for my small bakery. No files yet.
+
+**Expected:**
+- No offer: the first reply is already the Opening, recommending the light path as the first question of its round.
+- Proposes the likely recurring requests and the smallest file set as a hypothesis.
+
+**Fail if:** it asks whether to use the skill; it writes instructions or files before the Project plan is approved.

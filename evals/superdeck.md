@@ -29,7 +29,7 @@ Scenarios that check whether superdeck behaves as designed. Run them as describe
 **Expected:**
 - Replies in English and recommends express mode.
 - The opening asks for materials in one line, as in full mode.
-- Once express is confirmed, one message brings the full proposal: central idea, storyline with assertion titles, hook and close (the close is the cashback decision), visual concept and global rules, build tool, a low-fidelity prototype of two or three slides, plus one round of at most five risk questions.
+- Once express is confirmed, one message brings the full proposal: central idea, storyline with assertion titles, hook and close (the close is the cashback decision), visual concept and global rules, build option, a low-fidelity prototype of two or three slides, plus one round of at most five risk questions.
 - Asks for one explicit approval of the whole proposal (a single gate).
 - After approval, builds, reviews the result on the rendered slides and runs the cold reader on the finished deck before delivering.
 

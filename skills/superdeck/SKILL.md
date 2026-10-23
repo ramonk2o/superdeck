@@ -52,7 +52,7 @@ If something comes up in the middle of express mode that changes the course — 
 
 **Go back when needed.** If something from an earlier phase changes (a figure doesn't exist, the audience changed, the central idea fell), say so clearly and reopen the affected phase. Moving forward on a base that fell only adds rework.
 
-**A gate is explicit approval.** "OK", "approved", "go ahead" count. Silence, a change of subject or a passing comment do not — ask. An "ok to all" in a question round approves the answers, not the gate: the gate has its own request. It is what ensures the user recognizes the deck as theirs.
+**A gate is explicit approval.** "OK", "approved", "go ahead" count. Silence, a change of subject or a passing comment do not — ask. An "ok to all" in a question round approves the answers, not the gate: the gate has its own request. It is what ensures the user recognizes the deck as theirs. After a gate, its document is a closed specification: what comes next doesn't add, drop or swap anything decided there without asking, and content changes made later, including after delivery, are written back into the Script and the Production plan.
 
 **Checks by someone who wasn't here.** Three steps check the work with a reader who did not follow the conversation: the cold reader on the titles (1.7), the plan review (2.5) and the cold reader on the finished deck (3.3). A model inside this conversation already knows the objective and the central idea, so never play that reader yourself.
 - If the session can start a subagent, give it only what the step's reference file says, and nothing else.
@@ -163,7 +163,7 @@ Just as Phase 1 starts from a central idea, Phase 2 starts from a **visual conce
 
 **2.1 Visual direction.** Read `references/visual-concept.md` and `references/visuals-and-charts.md`. Start from the identity materials gathered in the opening; if there are none, follow the "No identity material" section. Propose 2 or 3 concepts derived from the central idea, the arc, the memorable moment, the audience and the tone, and recommend one. Once the user picks one, state the global rules derived from the concept and the identity — palette, typography, text density by format, chart standard, tone of the copy and use of images — for the prototype to show in practice.
 
-**2.2 Build tool.** Read `references/handoff.md` and choose with the user how the deck will be built, from what the session can actually do. Choosing before the prototype keeps the prototype and the plan within what the tool can execute, and lets Gate 2 approve the tool along with the plan.
+**2.2 Build option.** Read `references/handoff.md` and choose with the user how the deck will be built, from what the session can actually do. Choosing before the prototype keeps the prototype and the plan within what that option can execute, and lets Gate 2 approve the build option along with the plan.
 
 **2.3 Prototype.** Before detailing slide by slide, show 2 or 3 representative slides in low fidelity — the cover or hook, the hardest data slide and the memorable moment — drawn inline when the session allows (a simple HTML or SVG sketch) or as a quick draft. Seeing the visual is worth more than reading about it. The sketch validates the concept and the global rules, not the deck: don't call build skills here, and adjust both with the user's feedback before moving on.
 

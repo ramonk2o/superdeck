@@ -1,6 +1,6 @@
 # superlab
 
-Agent Skills that plan a piece of writing with you before producing it: first what it needs to say, then how it will look, and only then the output, with explicit approval gates between phases.
+Agent Skills that plan a piece of writing with you before producing it: first what it needs to say and what goes in, and only then the output, with explicit approval gates between phases.
 
 | Skill | For | Status |
 |---|---|---|

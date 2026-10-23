@@ -1,6 +1,6 @@
 # Handoff
 
-Used to choose how to build (step 2.2, or the build line of the express proposal), to build (3.1) and to review the result (3.2).
+Used to choose the build option (step 2.2, or the build line of the express proposal), to build (3.1) and to review the result (3.2).
 
 ## Choosing how to build
 
@@ -13,7 +13,7 @@ Used to choose how to build (step 2.2, or the build line of the express proposal
 If the chosen option needs a file (such as a template), ask for it before building. If it is no longer available when the build starts (for example, in a new conversation), say so and choose again.
 
 ## Building
-- The Production plan is the specification, already decided with the user. Don't rewrite titles, add slides, swap visuals or invent data. If something isn't possible in the chosen tool, ask before adapting.
+- The Production plan is the specification, as "A gate is explicit approval" in `SKILL.md` says: no rewritten titles, added slides, swapped visuals or invented data. If something isn't possible in the chosen tool, ask before adapting.
 - Pass everything that was decided on to the build: global rules, identity, the content of each slide and the speaker notes.
 
 ## Review
@@ -24,6 +24,3 @@ Before delivering:
 - Tell the user what was fixed and what still diverges from the plan.
 
 If the chosen tool doesn't let you see the result (a prompt for an external tool, a build checklist), deliver this review as a checklist for the user to run after assembling.
-
-## After delivery
-Adjustments requested after the build that change content (not just appearance) must also be recorded in the Script and the Production plan, so they remain the source of truth.
